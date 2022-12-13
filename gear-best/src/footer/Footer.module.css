@@ -1,0 +1,316 @@
+.footer {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  background-color: #fafafa;
+}
+.footerHomeScroll {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-color: #ffffff;
+}
+.footerHomeScroll > div {
+  width: 17%;
+  height: 100%;
+ 
+}
+.footerInputSub {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  
+}
+.footerAllPayLogo {
+  width: 80%;
+  height: auto;
+  display: flex;
+
+  justify-content: space-between;
+  justify-items: center;
+
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+.footerCopyRight {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.logoFont {
+  padding: 0px 20px;
+  font-size: 14px;
+  color: black;
+}
+.websiteLogoImage {
+  width: 100%;
+}
+.hightQualitySec {
+  margin-top: -3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.hightQualitySec:hover {
+  color: #ffda00;
+}
+.totalProductQuality {
+  margin-top: -8px;
+  font-size: 12px;
+  color: #666666;
+}
+.homeLogo:hover {
+  color: #ffda00;
+}
+.paymentUl {
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+}
+.payImage {
+  width: 80%;
+  margin-right: 15px;
+}
+.inputboxWithL {
+  width: 100%;
+  height: 40px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  gap: 250px;
+
+  
+}
+.inputboxWithL > div {
+  width: 40%;
+  height: 100%;
+  
+}
+.footerSocailMediaL {
+  display: flex;
+  color: #464646;
+  list-style-type: none;
+  cursor: pointer;
+}
+.footerSocailMediaL > li {
+  margin-top: -10px;
+  margin-right: 20px;
+}
+.footerSocailMediaL > li:hover {
+  color: skyblue;
+}
+.footerabout {
+  width: 100%;
+  height: 310px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.footerabout > div {
+  width: 23%;
+  height: 100%;
+ 
+}
+.ccod {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+.ccodUl {
+  list-style: none;
+
+  cursor: pointer;
+}
+.ccodUl > li {
+  text-align: left !important;
+  padding: 2.5px;
+  font-size: 12px;
+  color: #666666;
+  margin-left: -40px;
+}
+.qrPstore {
+  display: flex;
+}
+
+.qrPstore > div:nth-child(2) {
+  cursor: pointer;
+}
+
+.qrPstore > div > img {
+  width: 70%;
+}
+
+.newLetter {
+  text-align: left;
+  margin-right: 140px;
+}
+
+.inputboxsub {
+  width: 250px;
+  height: 35px;
+  margin-left: -130px;
+  resize: none;
+  outline: none;
+}
+.sub {
+  text-align: center;
+  width: 120px;
+  height: 38px;
+  color: white;
+  background-color: black;
+}
+
+/* meadia query for phone */
+
+@media only screen and (max-device-width: 480px) {
+  .footerHomeScroll {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footerHomeScroll > div {
+    width: 60%;
+  }
+ .inputboxWithL {
+  width:auto;
+  height: 40px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  gap: 250px;
+
+  border: 1px solid red;
+}
+.inputboxWithL > div {
+  width: 40%;
+  height: 100%;
+  
+}
+.footerabout {
+ 
+  
+  height: auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.footerabout > div {
+  width: 60%;
+  height: auto;
+  
+}
+.ccodUl>li{
+    text-align: center !important;
+}
+.ccod{
+    text-align: center !important;
+}
+.footerCopyRight {
+  width: 200px ;
+  height: auto;
+  padding: 2px;
+  
+ 
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.footerAllPayLogo {
+  width: 200px;
+  height: auto;
+  
+}
+.paymentUl {
+    
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 3px;
+}
+
+
+.newLetter {
+  text-align: center;
+  margin: auto;
+}
+.inputboxsub {
+  width: 100px;
+  height: auto ;
+  margin: auto;
+  
+}
+.inputboxWithL {
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+
+ 
+}
+.inputboxWithL > div {
+  width: 250px;
+
+  height: auto;
+  margin: auto;
+  
+}
+
+.footerSocailMediaL > li {
+    
+  margin-top: -10px;
+  margin-right: 0px;
+  
+}
+.footerSocailMediaL {
+display: flex;
+justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+
+}
+}
+
+/* meadia query for tables */
+
+/* @media (min-width: 481px) and (max-width: 767px) {
+            
+.footerHomeScroll {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footerHomeScroll > div {
+    width: 40%;
+    margin: auto;
+  }
+        } */
