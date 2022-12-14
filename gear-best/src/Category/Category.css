@@ -1,0 +1,14 @@
+
+@media (max-width:650px) {
+    .heroNone{
+        display: none;
+    }
+
+}
+
+@media (min-width:650px){
+    .heroTop{
+        display: none;
+    }
+
+}
