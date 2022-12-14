@@ -9,9 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Category />
-      <Footer/>
+
    
     </div>
   )
