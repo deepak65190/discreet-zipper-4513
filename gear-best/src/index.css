@@ -1,8 +1,16 @@
+/* *{
+  font-family: 'Quicksand', sans-serif;
+} */
+
 :root {
   margin: 0px;
 padding: 0px;
 box-sizing: border-box;
 font-family: 'Open Sans', sans-ser
+}
+
+.boxShadowUnitProduct:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
