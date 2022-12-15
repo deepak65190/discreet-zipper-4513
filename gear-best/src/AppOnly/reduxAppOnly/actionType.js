@@ -1,0 +1,3 @@
+export const GET_DATA_REQUEST = "GET_DATA_RQUEST"
+export const GET_DATA_SUCCESS = "GET_SUCCESS"
+export const GET_DATA_ERROR = "GET_ERROR"

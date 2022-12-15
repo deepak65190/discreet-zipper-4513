@@ -17,9 +17,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.5",
-    "redux": "^4.2.0",
-    "thunk": "^0.0.1"
+    "redux-thunk": "^2.4.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
