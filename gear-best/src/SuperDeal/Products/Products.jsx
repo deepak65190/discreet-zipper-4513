@@ -7,34 +7,56 @@ import ProductCard from "./ProductCard";
 import { useState } from "react";
 
 const Products = () => {
-
- const [clas,setClas]=useState('recommend')
+  const [clas, setClas] = useState("recommend");
   const dispatch = useDispatch();
   const data = useSelector((store) => store);
+
+    let products = data.data;
+
+
+
+  if (clas === "price") {
+    products.sort((a, b) => Number(a.newPrice) - Number(b.newPrice));
+  }
+
+  if (clas === "discount") {
+    products.sort(
+      (a, b) =>
+        (
+          ((Number(b.price) - Number(b.newPrice)) / Number(b.price)) *
+          100
+        ).toFixed(0) -
+        (
+          ((Number(a.price) - Number(a.newPrice)) / Number(a.price)) *
+          100
+        ).toFixed(0)
+    );
+  }
   useEffect(() => {
     dispatch(getProductData);
   }, []);
 
+ 
   return (
     <div className={styles.container}>
       <div className={styles.productsnav}>
         <span>Sort By:</span>
         <div>
-          <span onClick={()=>setClas('recommend')} className={clas? '':"recommend"} >Recommend</span>
-          <span onClick={()=>setClas('hottest')} className={clas? '':"hottest"} >Hottest</span>
-          <span onClick={()=>setClas('newest')} className={clas? '':"newset"} >Newest</span>
-          <span onClick={()=>setClas('price')} className={clas? '':"price"} >
+          <span onClick={() => setClas("recommend")} className={clas=="recommend"? styles.price:''}>Recommend</span>
+          <span onClick={() => setClas("hottest")} className={clas=="hottest"? styles.price:''}>Hottest</span>
+          <span onClick={() => setClas("newest")} className={clas=="newest"? styles.price:''}>Newest</span>
+          <span onClick={() => setClas("price")}  className={clas=="price"? styles.price:''} >
             Price
             <GoTriangleUp />
           </span>
-          <span onClick={()=>setClas('discount')} className={clas? '':"discount"} >
+          <span onClick={() => setClas("discount")} className={clas=="discount"? styles.price:''}>
             Discount
             <GoTriangleDown />
           </span>
         </div>
       </div>
       <div className={styles.productsdata}>
-        {data?.data?.map((item) => (
+        {products?.map((item) => (
           <ProductCard {...item} />
         ))}
       </div>

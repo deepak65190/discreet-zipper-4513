@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    background-color: white;
 }
 .category>div{
     display: flex;
@@ -23,10 +24,12 @@
     color: black;
 }
 .countdown{
+    height: auto;
     width:100%;
     display: flex;
     position: sticky;
-    top: 0px;
+    top: 0;
+    z-index: 10;
 }
 .countdown>div{
     width: 33.33%;

@@ -5,7 +5,7 @@ import Deal1 from "./Deal1";
 import Deal2 from "./Deal2";
 const Navbar = () => {
   return (
-    <div>
+    <div style={{position:"sticky"}}>
       <div className={styles.category}>
         <div>
           <img

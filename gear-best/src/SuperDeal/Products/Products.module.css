@@ -35,3 +35,6 @@ span:hover{
     grid-template-columns: repeat(5,1fr);
     gap:10px;
 }
+.price{
+    color:grey
+}
