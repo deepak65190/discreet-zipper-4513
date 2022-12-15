@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.4.3",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -18,7 +19,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.5",
+    "react-slick": "^0.29.0",
     "redux": "^4.2.0",
+    "slick-carousel": "^1.8.1",
     "thunk": "^0.0.1"
   },
   "devDependencies": {
