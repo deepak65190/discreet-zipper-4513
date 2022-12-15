@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.container{
+    width: 85vw;
+    margin-top: 100px;
+    margin: auto;
+}
+
+.secondtitle{
+    height: 28px;
+    line-height: 28px;
+    color: #000;
+    font-weight: 700;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-left: 3px;
+}
+
+
+.productsdata{
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:10px;
+}

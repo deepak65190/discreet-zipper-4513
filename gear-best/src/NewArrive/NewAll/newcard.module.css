@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.container>div>img{
+    width: 90%;
+    margin: auto;
+}
+.container p{
+    white-space: nowrap; 
+    font-size: 14px;
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container>div{
+    width: 90%;
+    margin: auto;   
+    font-size: 11px;
+}
+.container>div:nth-child(1){
+position: relative;
+}
+.container>div>h2{
+    color: red;
+}
+.discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}

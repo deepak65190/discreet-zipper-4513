@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.newtitle{
+    width: 80%;
+    height: 28px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    gap:10px;
+
+}
+.daimond{
+   font-size: 21px;
+   
+}
+.product_carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+}
+
+.product_container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.cardbox{
+    border: 1px solid #eee;
+}
+
+.pre_btn
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
+    font-size: 2rem;
+    color: #666;
+    font-weight: 700;
+    font-family: iconfont,serif;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+}
+
+.next_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
+    font-size: 2rem;
+    color: #666;
+    font-weight: 700;
+    font-family: iconfont,serif;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+}
+.caroselwrap{
+    position: relative;
+}
+
+.arrow {
+    width: 30px;
+    height: 50px;
+    font-size: 28px;
+    background-color: rgba(20, 15, 15, 0.436);
+    color: rgb(245, 228, 228);
+    border-radius: 1px;
+    cursor: pointer;
+}
+.Mycard{
+    min-width: 300px;
+    max-width: 300px;
+    height: 400px;
+}
