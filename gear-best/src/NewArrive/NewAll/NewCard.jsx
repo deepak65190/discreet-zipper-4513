@@ -15,12 +15,12 @@ const NewCard = ({ price__1, image, price, id, title }) => {
       </div>
       <div>
         <p>{title}</p>
-        <span style={{ fontSize: "17px", color: "red" }}>${price__1}</span>
-        <br />
         <span style={{ fontSize: "13px", color: "grey" }}>RRP:</span>
         <span style={{ fontSize: "13px", color: "grey" }}>
           <del>${price}</del>
         </span>
+        <br />
+        <span style={{ fontSize: "17px", color: "red" }}>${price__1}</span>
       </div>
     </div>
   );

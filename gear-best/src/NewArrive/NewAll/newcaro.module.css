@@ -88,3 +88,17 @@
     max-width: 300px;
     height: 400px;
 }
+@media only screen and (max-width: 600px) {
+    .container{
+        width: auto;
+    }
+    .productsdata {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+    }
+    .secondtitle{
+        text-align: center;
+    }
+  }
