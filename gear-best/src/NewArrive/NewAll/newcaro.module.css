@@ -28,11 +28,12 @@
 
 .product_container {
     width: 100%;
-    height: 200px;
+    height: 210px;
     display: flex;
     gap: 10px;
     overflow: hidden;
     scroll-behavior: smooth;
+    padding: 5px 0 5px;
 }
 .cardbox{
     border: 1px solid #eee;
@@ -89,16 +90,5 @@
     height: 400px;
 }
 @media only screen and (max-width: 600px) {
-    .container{
-        width: auto;
-    }
-    .productsdata {
-        width: auto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:10px;
-    }
-    .secondtitle{
-        text-align: center;
-    }
+   
   }

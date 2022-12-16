@@ -11,7 +11,7 @@ const NewCard = ({ price__1, image, price, id, title }) => {
        <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
        <span style={{ fontSize: "14px", color: "white" }}>OFF</span>
       </div>
-        <img src={image} alt="" />
+        <img src={image} alt="icon" />
       </div>
       <div>
         <p>{title}</p>

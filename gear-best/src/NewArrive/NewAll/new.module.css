@@ -2,11 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    
 }
+html::-webkit-scrollbar {
+    display: none;
+  }
 .container{
     width: 85vw;
     margin-top: 100px;
     margin: auto;
+    
+    
+}
+.secondtitlebox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.smalltitle{
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .secondtitle{
@@ -17,16 +32,98 @@
     text-align: left;
     font-size: 20px;
     margin-bottom: 16px;
-    margin-left: 3px;
+    margin-left: 20px;
 }
 
 
 .productsdata{
-    width:100;
+    width:100%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap:10px;
 }
+
+.navbox{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color:#fff ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.super_imgbox:first-of-type{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    font-weight: 700;
+}
+.navcard{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: inline-flex;
+    display: flex;
+    gap: 35px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   
+    
+}
+
+.super_imgbox{
+    width: 141px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .super_title{
+    width: 110px;
+    flex: 1;
+    color: #454545;
+    text-align: center;
+     
+ }
+ .super_imgbox:hover{
+    font-weight: 700;
+ }
+
+.navcard::-webkit-scrollbar{
+    display: none;
+}
+
+.superprev{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 0;
+    margin: auto;
+    height: 40px;
+    font-size: 2rem;
+    color: #666;
+    font-weight: 700;
+    font-family: iconfont,serif;
+    cursor: pointer;
+    z-index: 2;
+ }
+
+ .supernext{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    margin: auto;
+    height: 40px;
+    font-size: 2rem;
+    color: #666;
+    font-weight: 700;
+    font-family: iconfont,serif;
+    cursor: pointer;
+ }
+
+
+
 @media only screen and (max-width: 600px) {
     .container{
         width: auto;
