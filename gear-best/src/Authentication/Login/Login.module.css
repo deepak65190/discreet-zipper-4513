@@ -6,7 +6,7 @@
     height: 45px;
 }
 .container>div{
-    width: 88%;
+    width: 80%;
     margin: auto;
     padding-top: 20px;
 }
@@ -16,7 +16,7 @@
 }
 .form{
     padding: 50px;
-    width: 40%;
+    width: 450px;
     box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
 }
 
@@ -48,3 +48,25 @@
 .form>div:nth-child(2){
     margin-top: 20px;
 }
+@media (max-width:767px){
+   .form{
+    width: 350px;
+   }
+    .login>input{
+        padding: 6px 100px 6px 15px;
+    }
+    .btn{
+        padding: 10px 110px;
+    }
+}
+@media (max-width:420px){
+    .form{
+     width: 300px;
+    }
+     .login>input{
+         padding: 6px 40px 6px 15px;
+     }
+     .btn{
+         padding: 10px 90px;
+     }
+ }
