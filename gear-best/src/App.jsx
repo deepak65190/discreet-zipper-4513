@@ -10,8 +10,8 @@ import Signup from "./Authentication/Signup/Signup";
 function App() {
   return (
     <div className="App">
-     {/* <Homepage /> */}
-      <New />
+     <Homepage />
+      {/* <New /> */}
       {/* <Products />  */}
       {/* <Navbar/> */}
       {/* <Login/> */}

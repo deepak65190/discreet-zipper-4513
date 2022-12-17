@@ -6,7 +6,7 @@ import {FaFileInvoiceDollar} from "react-icons/fa";
 
 function Row1() {
   return (
-    <div style={{width:"80%",margin:"auto"}}>
+    <div style={{width:"90%",margin:"auto"}}>
       <HStack ml="15px" gap="28px" mb="20px" >
         <Icon boxSize="30px" as={FaFileInvoiceDollar} />
         <Text fontSize="1.5rem" fontWeight="bold">

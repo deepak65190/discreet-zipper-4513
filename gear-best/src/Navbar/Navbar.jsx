@@ -131,6 +131,7 @@ function Navbar() {
           <Flex h="35px" border="2.2px solid #3a86ff" borderRadius="25px">
             <Input
               h="100%"
+              w="150vw"
               className="NavInput"
               maxW="400px"
               borderLeftRadius="25px"
@@ -138,7 +139,7 @@ function Navbar() {
               fontSize="1rem"
               placeholder="Product Tag"
               py="-4px"
-            ></Input>
+            />
             <Button h="100%" borderRadius="30px" color="black.600" backgroundColor='yellow.400'>
               <Center>
                 <Icon boxSize="1.3rem" as={AiOutlineSearch}></Icon>

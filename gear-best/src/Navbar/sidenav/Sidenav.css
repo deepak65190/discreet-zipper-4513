@@ -4,7 +4,7 @@ nav{
     display: block;
     padding: 0.7rem 1.7rem;
     position: fixed;
-    left: 85%;
+    left: 87%;
     transform:  translateX(-50%);
     bottom: 2rem;
     display: flex;
@@ -12,7 +12,7 @@ nav{
     border-radius: 3rem;
     backdrop-filter: blur(15px);
     transform: rotate(90deg);
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 nav a{

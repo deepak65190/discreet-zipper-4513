@@ -1,0 +1,83 @@
+.four-div {
+    width: 100%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .four-div-block {
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 1rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    max-width: 380px;
+    margin: auto;
+  }
+  .four-div-block > div > img:hover {
+    transform: scale(1.022);
+  }
+  .four-div-block > div {
+    text-align: center;
+  }
+  .four-div-block > div > img {
+    /* transform: scale(1.022); */
+    transition: transform 0.2s ease;
+    width: 90%;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+  
+  .four-div-block-upper1 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(119, 0, 255);
+  }
+  .four-div-block-upper2 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(240, 76, 22);
+  }
+  .four-div-block-upper3 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(74, 152, 37);
+  }
+  .four-div-block-upper4 {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(228, 142, 22);
+  }
+  .discription {
+    flex-wrap: wrap;
+    font-size: 14.5px;
+    padding: 8px;
+    
+    /* text-align: center; */
+  }
+
+  .row2MainDiv{
+    margin-top: 100px;
+  }
+
+  .topClassP{
+    font-size: 2.34rem;
+  }
+
+  @media (max-width:1200px){
+    .four-div {
+      grid-template-columns: repeat(2,1fr);
+      padding: 40px;
+    }
+  }
+
+
+  @media (max-width:600px){
+    .four-div {
+      grid-template-columns: repeat(1,1fr);
+      padding: 40px;
+    }
+  }

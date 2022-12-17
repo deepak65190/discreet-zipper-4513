@@ -3,7 +3,7 @@ import {Box, Flex, Image, Text} from '@chakra-ui/react'
 
 function FooterThird() {
   return (
-    <Box p='0 20px' backgroundColor='#FAFAFA' w='80%' m='auto'>
+    <Box p='0 20px' backgroundColor='#FAFAFA' w='90%' m='auto'>
         <Flex mb='40px' justifyContent='space-between' gap='5px'>
             <Box>
                 <Text  fontWeight='bold'>Company Information</Text>
@@ -44,7 +44,7 @@ function FooterThird() {
             <Image w='120px' src='https://cdn.pixabay.com/photo/2021/12/12/16/10/qr-6865526__340.png'></Image>
             </Box>
         </Flex>
-            <Text  p='10px 20px' bg='black' color='white' textAlign='center'>Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</Text>
+            <Text p='10px 20px' bg='black' color='white' textAlign='center'>Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</Text>
     </Box>
   )
 }

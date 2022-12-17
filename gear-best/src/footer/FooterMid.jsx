@@ -4,7 +4,7 @@ import {BsFacebook, BsInstagram, BsMessenger , BsYoutube, BsTwitter} from 'react
 
 function FooterMid() {
   return (
-    <Box bg='#FAFAFA' p='50px 20px' w='80%' m='auto'>
+    <Box bg='#FAFAFA' p='50px 20px' w='90%' m='auto'>
         <Flex className='footerMid' justifyContent='space-between'>
             <Center>
                 <Text mr='8px'>NewsLetter</Text>         

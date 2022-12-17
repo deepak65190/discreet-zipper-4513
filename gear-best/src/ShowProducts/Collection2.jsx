@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 function Collection2() {
   return (
-    <Box m='50px 0'  w="80%" margin="auto">
+    <Box m='50px 0'  w="90%" margin="auto">
         <HStack ml='15px' gap='28px'>
         <Icon boxSize='30px' as={GrDiamond} />
         <Text fontSize='1.5rem' fontWeight='bold'> NEW</Text>
