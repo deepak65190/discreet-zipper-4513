@@ -1,0 +1,94 @@
+.SinglePageSeciont{
+    width:  80%;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+    border: 1px solid red;
+}
+.SinglePageSeciont>div:nth-child(1){
+width:400px;
+height: 400px;
+border: 1px solid black;
+}
+.SinglePageSeciont>div:nth-child(2){
+    width:800px;
+height: 400px;
+border: 1px solid black;
+}
+.SinglePageTitle{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.SinglePageTitleDiv{
+    width: 65%;
+}
+.SinglePageFlashSale{
+    width: 90%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #F30240;
+    border-radius: 5px;
+}
+.SinglePageFlashTitle{
+   margin-left: 10px;
+    align-items: flex-end;
+    font-size: 28px;
+    font-style: italic;
+    color: white;
+
+}
+.SinglePagePrice{
+    width: 60%;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid red;
+}
+.SinglePagePriceSapan{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F30240;
+}
+.SinglePageOff{
+    padding: 3px 10px;
+    margin-top: -30px;
+    background-color:#F30240 ;
+    border-radius: 5px;
+    color: white;
+}
+
+.SinglePageQTC{
+    margin-right: 50px;
+}
+
+.SinglePageCBPbtn{
+    width: 60%;
+    height: 50px;
+   
+    margin-top: 30px;
+}
+.SinglePageCBPbtn>button{
+    width: 30%;
+    height: 100%;
+    
+    border-radius: 5px;
+    margin-right: 10px;
+    
+}
+.SinglePageCBPbtn>button:nth-child(1){
+    background-color: #E6013C;
+    color: white;
+}
+.SinglePageCBPbtn>button:nth-child(2){
+    background-color: #FFEFF2;
+    color: #E6013C;
+    border: 1px solid #E6013C;
+}
+.SinglePageCBPbtn>button:nth-child(3){
+background-color: #FFC439 ;
+color: #09A2DF;
+}
