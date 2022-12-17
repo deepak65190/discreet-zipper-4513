@@ -1,0 +1,62 @@
+.category{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.category>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: grey;
+}
+.category>div>img{
+    width:40px;
+    height: 40px;
+}
+.category>div:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+}
+.countdown{
+    height: auto;
+    width:100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.countdown>div{
+    width: 33.33%;
+    height: 60px;
+}
+.countdown>div:nth-child(1){
+    background-color: #3d3c3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(163, 161, 161);
+}
+.countdown>div:nth-child(3){
+        background-color: #3d3c3c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(163, 161, 161);
+
+}
+.countdown>div:nth-child(2){
+    background: linear-gradient(180deg,#ff7147,#f30240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(59, 59, 59);
+}

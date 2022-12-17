@@ -1,0 +1,40 @@
+.container{
+    width: 85vw;
+    margin: auto;
+}
+.productsnav{
+    height: 20px;
+
+
+    font-size: 13px;
+padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+}
+.productsnav>span{
+    color: rgb(102, 99, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productsnav>div{
+    display: flex;
+    gap:10px;
+    margin-left: 10px;
+}
+.productsnav>div>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span:hover{
+    cursor: pointer;
+}
+.productsdata{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:10px;
+}
+.price{
+    color:grey
+}
