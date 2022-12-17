@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import image1 from "../assets/Sparkle.png";
+
 import {
   Box,
   Center,
@@ -38,7 +39,7 @@ function Navbar() {
     
       p="10px"
       pb='0px'
-      width='80%'
+      width='90%'
       maxw="1200px"
       className="navbarBox"
       display="flex"
@@ -124,7 +125,7 @@ function Navbar() {
           <Link to="/login">
             <Center cursor="pointer" gap="10px">
               <Icon boxSize="1.8rem" as={CgProfile} className="profileLogo" />
-              <Text fontSize="1.05rem">Log In</Text>
+            <Text fontSize="1.05rem">Log In</Text>
             </Center>
           </Link>
           <Flex h="35px" border="2.2px solid #3a86ff" borderRadius="25px">
@@ -174,6 +175,7 @@ function Navbar() {
           </Menu>
         </Center>
       </Box>
+      
     </Box>
 
  

@@ -1,10 +1,13 @@
-import Navbar from "../navbar/navbar";
+import Navbar1 from "../navbar/navbar";
 import Products from "../Products/Products";
+
+
 const Main=()=>{
     return (
         <>
-        <Navbar/>
+        <Navbar1/>
         <Products/>
+      
         </>
     )
 }

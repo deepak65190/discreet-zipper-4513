@@ -1,3 +1,3 @@
-export const GET_PRODUCTS_LOADING = 'products/loading';
-export const GET_PRODUCTS_SUCCESS = 'products/success';
-export const GET_PRODUCTS_ERROR = 'products/error';
+export const GET_NEWPRODUCTS_LOADING = 'newproducts/loading';
+export const GET_NEWPRODUCTS_SUCCESS = 'newproducts/success';
+export const GET_NEWPRODUCTS_ERROR = 'newproducts/error';

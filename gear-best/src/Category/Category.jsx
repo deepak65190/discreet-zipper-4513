@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text,Box,Flex, HStack, Image,Grid,GridItem } from '@chakra-ui/react'
-import Carousel from './Carousal';
+
 import './Category.css';
 
 function Hero() {
@@ -38,7 +38,7 @@ function Hero() {
                 </Flex>
                 <Box>
                     <Box padding='24px'>
-                   <Carousel/>
+                   {/* <Carousel/> */}
                     </Box>
 
                 {/* <Flex w='100%' m='auto' justifyContent='space-between'>
@@ -53,7 +53,7 @@ function Hero() {
             </Box>
             
         </Flex>
-    <Grid templateColumns='repeat(4, 1fr)' gap={3}>
+      <Grid templateColumns='repeat(4, 1fr)' gap={3}>
         <Image width='100%'  cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/8823/ortur_master3_230%C3%97120_en.jpg'></Image>
         <Image width='100%' cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg'></Image>
         <Image width='100%' cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg'></Image>                   
@@ -61,7 +61,7 @@ function Hero() {
     </Grid>
     </Box>
     <Box  className='heroTop' mt='-60px' padding='24px'>
-        <Carousel/>
+        {/* <Carousel/> */}
     </Box>
 
     </>

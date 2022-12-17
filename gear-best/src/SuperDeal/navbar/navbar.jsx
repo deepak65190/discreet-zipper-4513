@@ -3,7 +3,7 @@ import React from "react";
 import Deal from "./Deal";
 import Deal1 from "./Deal1";
 import Deal2 from "./Deal2";
-const Navbar = () => {
+const Navbar1 = () => {
   return (
     <div style={{position:"sticky"}}>
       <div className={styles.category}>
@@ -88,4 +88,4 @@ const Navbar = () => {
     </div>
   );
 };
-export default Navbar;
+export default Navbar1;

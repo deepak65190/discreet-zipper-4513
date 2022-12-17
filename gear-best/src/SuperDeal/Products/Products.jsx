@@ -5,13 +5,16 @@ import { useEffect } from "react";
 import { getProductData } from "../Redux/actions";
 import ProductCard from "./ProductCard";
 import { useState } from "react";
+import Navbar1 from "../navbar/navbar";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 const Products = () => {
   const [clas, setClas] = useState("recommend");
   const dispatch = useDispatch();
   const data = useSelector((store) => store);
 
-    let products = data.data;
+    let products = data.productReducer.data;
 
 
 
@@ -39,6 +42,8 @@ const Products = () => {
  
   return (
     <div className={styles.container}>
+    <Navbar />
+    <Navbar1/>
       <div className={styles.productsnav}>
         <span>Sort By:</span>
         <div>
@@ -60,7 +65,9 @@ const Products = () => {
           <ProductCard {...item} />
         ))}
       </div>
+      <Footer />
     </div>
+    
   );
 };
 export default Products;

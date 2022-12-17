@@ -5,7 +5,9 @@ import App from './App'
 import './index.css';
 import  {ChakraProvider} from "@chakra-ui/react";
 import { BrowserRouter } from 'react-router-dom';
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react';
+import {Provider} from "react-redux";
+import {store} from "./SuperDeal/Redux/store"
 
 const breakpoints = {
   base:'0px',
@@ -21,7 +23,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <BrowserRouter>
     <ChakraProvider theme={theme}>
-     <App />
+      <Provider store={store}>
+      <App />
+     </Provider>
     </ChakraProvider>
    </BrowserRouter>
   </React.StrictMode>

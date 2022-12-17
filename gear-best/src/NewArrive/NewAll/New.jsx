@@ -3,10 +3,13 @@ import styles from './new.module.css';
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import NewCard from "./NewCard";
-import { getProductData } from '../newRedux/actions';
+import { getNewProductData } from '../newRedux/actions';
 import { FiChevronLeft,FiChevronRight } from "react-icons/fi";
 import NewCaro from './NewCaro';
 import Dotdotdot from 'react-dotdotdot';
+import Navbar from '../../Navbar/Navbar';
+import Footer from '../../Footer/Footer';
+
 
 const nav =[
   {title:"All"},
@@ -33,10 +36,11 @@ const New = () => {
  
   const ref = useRef(null)
     const dispatch = useDispatch();
-    const data = useSelector((store) => store);
-    useEffect(() => {
-      dispatch(getProductData);
-    }, []);
+    const data1 = useSelector((store) => store);
+    let data=data1.newproductReducer.data
+   
+    
+ 
     const btnprev =()=>{
         let width = ref.current.clientWidth;
         ref.current.scrollLeft = ref.current.scrollLeft - width;
@@ -46,10 +50,14 @@ const New = () => {
         ref.current.scrollLeft = ref.current.scrollLeft + width;
     }
 
-   
+    useEffect(() => {
+     dispatch(getNewProductData)
+    }, []);
+
   
     return (
       <div className={styles.container}>
+        <Navbar />
         <NewCaro />
       
         <div>
@@ -75,11 +83,12 @@ const New = () => {
                 </div>
              </div>
            <div className={styles.productsdata}>
-             {data?.data.map((item) => (
+             {data?.map((item) => (
               <NewCard key={`caro-card-${item.id}`}  {...item} />
               ))}
             </div>
         </div>
+        <Footer />
       </div>
     );
 }
