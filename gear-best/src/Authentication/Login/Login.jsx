@@ -1,15 +1,13 @@
 import styles from "./Login.module.css";
 import { useState } from "react";
-import {useNavigate} from "react-router-dom"
 let data=JSON.parse(localStorage.getItem('userData'))
 const Login = () => {
     const [email,setEmail]=useState('')
     const [pass,setPass]=useState('');
-    const navigate=useNavigate()
    const handleSubmit=(e)=>{
 e.preventDefault();
  if(data.email==email && data.password==pass){
-  navigate('')
+  
  }else{
   alert("no")
 

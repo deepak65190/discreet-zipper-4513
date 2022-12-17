@@ -16,7 +16,7 @@
 }
 .form{
     padding: 50px;
-    width: 40%;
+    width: 400px;
     box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
 }
 .form>div>form>input{
@@ -30,18 +30,11 @@
     outline: none;
     border: 2px solid #FFDA00;
 }
-.form>div:nth-child(2)>form>input:nth-child(1){
-    padding: 6px 180px 6px 15px;
+.form>div:nth-child(2)>form>input{
+    width: 300px;
+    padding: 10px 15px;
 }
-.form>div:nth-child(2)>form>input:nth-child(7){
-    padding: 6px 59px 6px 15px;
-}
-.form>div:nth-child(2)>form>input:nth-child(3){
-    padding: 6px 180px 6px 15px;
-}
-.form>div:nth-child(2)>form>input:nth-child(5){
-    padding: 6px 180px 6px 15px;
-}
+
 .form>div:nth-child(2)>form>img{
     height: 36px;
 }
@@ -72,8 +65,8 @@
 .btn{
     border: none;
     background-color: #FFDA00;
-    padding: 10px 160px ;
-    /* padding: 10px; */
+    width: 300px;
+    padding: 10px;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -89,3 +82,28 @@
 .form>div:nth-child(2){
     margin-top: 20px;
 }
+@media (max-width:767px){
+    .form{
+     width: 350px;
+    }
+    .form>div:nth-child(2)>form>input{
+        width: 270px;
+     }
+     .btn{
+        width: 270px;
+     }
+ }
+ @media (max-width:420px){
+     .form{
+      width: 300px;
+     }
+     .form>div:nth-child(2)>form>input{
+        width: 230px;
+     }
+      .btn{
+        width: 230px;
+      }
+      .container{
+        text-align: center;
+      }
+  }
