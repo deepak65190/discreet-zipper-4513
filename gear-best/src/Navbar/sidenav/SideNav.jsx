@@ -1,10 +1,10 @@
 import React from 'react'
 import './Sidenav.css'
-import {HiShoppingBag} from 'react-icons/hi'
-import {FaFileInvoiceDollar} from 'react-icons/fa'
-import {GrDiamond} from 'react-icons/gr'
+import {CgShoppingBag} from 'react-icons/cg'
+import {TbFileDollar} from 'react-icons/tb'
+import {FiThumbsUp} from 'react-icons/fi'
 // import {RiServiceLine} from 'react-icons/ri'
-import {RiPencilFill} from 'react-icons/ri'
+import {RiInformationLine} from 'react-icons/ri'
 import {TbArrowBigUpLines} from 'react-icons/tb'
 import { useState } from 'react';
 
@@ -16,20 +16,20 @@ const Nav = () => {
       <a href="#Navbar" onClick={()=>setActiveNav('#Navbar')}
       className={activeNav==='#Navbar' ? 'active':''}><TbArrowBigUpLines/></a>
       
-      <a href="#" onClick={()=>setActiveNav('#')}
-      className={activeNav ==='#' ? 'active' : ''}><HiShoppingBag/></a>
+      <a href="#collection" onClick={()=>setActiveNav('#collection')}
+      className={activeNav ==='#collection' ? 'active' : ''}><CgShoppingBag/></a>
       
-      <a href="#about" onClick={()=>setActiveNav('#about')}
-      className={activeNav ==='#about' ? 'active' : ''}><FaFileInvoiceDollar/></a>
+      <a href="#superDeal" onClick={()=>setActiveNav('#superDeal')}
+      className={activeNav ==='#superDeal' ? 'active' : ''}><TbFileDollar/></a>
       
-      <a href="#experience" onClick={()=>setActiveNav('#experience')}
-      className={activeNav==='#experience' ? 'active':''}><GrDiamond/></a>
+      <a href="#recommend" onClick={()=>setActiveNav('#recommend')}
+      className={activeNav==='#recommend' ? 'active':''}><FiThumbsUp/></a>
       
       {/* <a href="#services" onClick={()=>setActiveNav('#services')}
       className={activeNav==='#services' ? 'active':''}><RiServiceLine/></a> */}
 
-      <a href="#portfolio" onClick={()=>setActiveNav('#portfolio')}
-      className={activeNav==='#portfolio' ? 'active':''}><RiPencilFill/></a>
+      <a href="#footer" onClick={()=>setActiveNav('#portfolio')}
+      className={activeNav==='#footer' ? 'active':''}><RiInformationLine/></a>
 
     </nav>
   )

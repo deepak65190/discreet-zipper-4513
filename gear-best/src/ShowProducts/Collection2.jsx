@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 
 function Collection2() {
   return (
-    <Box m='50px 0'  w="90%" margin="auto">
+   
+    <Box m='50px 0'  w="80%" margin="auto">
         <HStack ml='15px' gap='28px'>
         <Icon boxSize='30px' as={GrDiamond} />
         <Text fontSize='1.5rem' fontWeight='bold'> NEW</Text>
@@ -21,6 +22,7 @@ function Collection2() {
         </Grid>
 
     </Box>
+    
   )
 }
 
@@ -29,6 +31,7 @@ export default Collection2
 
 function Single({url,price,text}){
     let num = +(price) + 100
+
     return(
         <Link to='/products'>
           <Box boxShadow='rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px'  cursor='pointer' >
@@ -40,6 +43,7 @@ function Single({url,price,text}){
                 
         </Box>
         </Link>
+       
     )
 }
 

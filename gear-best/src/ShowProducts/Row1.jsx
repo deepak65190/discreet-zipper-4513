@@ -6,7 +6,8 @@ import {FaFileInvoiceDollar} from "react-icons/fa";
 
 function Row1() {
   return (
-    <div style={{width:"90%",margin:"auto"}}>
+    <section id='superDeal'>
+    <div style={{width:"80%",margin:"auto"}}>
       <HStack ml="15px" gap="28px" mb="20px" >
         <Icon boxSize="30px" as={FaFileInvoiceDollar} />
         <Text fontSize="1.5rem" fontWeight="bold">
@@ -117,6 +118,7 @@ function Row1() {
         </Link> */}
       </div>
     </div>
+    </section>
   );
 }
 

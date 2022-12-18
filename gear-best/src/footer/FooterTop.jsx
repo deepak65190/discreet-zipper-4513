@@ -8,7 +8,7 @@ import './Footer.css';
 function FooterTop() {
   return (
     <section id='footer'>
-    <Box bg='#FAFAFA' mt='40px' w='90%' m='auto'>
+    <Box bg='#FAFAFA' mt='40px' w='100%' m='auto'>
         {/* <Divider color='black' border='2px solid black' h='2px'/> */}
         <hr  color='black' style={{border:'.4px solid black'}} />
         <Flex className='footerTop' mt='40px' justifyContent='space-between' px='20px'>

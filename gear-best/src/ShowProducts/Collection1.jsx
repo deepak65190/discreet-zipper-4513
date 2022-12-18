@@ -43,7 +43,8 @@ function Collection() {
 
 
   return (
-    <Box m='5 0px 0' my='40px' w="90%" margin="auto" >
+   <section id='collection'>
+    <Box m='5 0px 0' my='40px' w="80%" margin="auto" >
         <HStack ml='15px' gap='28px' >
         <Icon boxSize='30px' as={BsFillHandbagFill} />
         <Text fontSize='1.5rem' fontWeight="bold"> COLLECTION</Text>
@@ -53,6 +54,7 @@ function Collection() {
         </Grid>
 
     </Box>
+    </section>
   )
 }
 

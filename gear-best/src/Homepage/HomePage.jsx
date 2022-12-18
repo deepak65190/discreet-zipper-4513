@@ -14,7 +14,7 @@ function HomePage() {
   return (
     <div>
      <Navbar/>
-     {/* <Category /> */}
+     <Category />
      <Collection/>
      <Row1/>
      <Collection2/>

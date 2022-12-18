@@ -8,8 +8,7 @@ import { useState } from "react";
 import Navbar1 from "../navbar/navbar";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-
-// import CommonHeader from "../../Navbar/CommonHeader";
+import CommonHeader from "../../Navbar/CommonHeader";
 
 const Products = () => {
   const [clas, setClas] = useState("recommend");
@@ -45,7 +44,7 @@ const Products = () => {
   return (
     <div className={styles.container}>
     <Navbar />
-    {/* <CommonHeader /> */}
+    <CommonHeader />
     <Navbar1/>
       <div className={styles.productsnav}>
         <span>Sort By:</span>

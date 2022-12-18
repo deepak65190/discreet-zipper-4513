@@ -1,4 +1,5 @@
 import styles from "./HomeProductCard.module.css";
+import { Link } from "react-router-dom";
 
 const HomeProductCard = ({ newPrice, image, price, id, title,discount }) => {
   // const discount = Number(price) - Number(newPrice);
@@ -6,6 +7,7 @@ const HomeProductCard = ({ newPrice, image, price, id, title,discount }) => {
   const dis= discount;
   return (
     <div className={styles.container}>
+      <Link to='/singlepage'>
       <div>
       <div className={styles.discount}>
        <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
@@ -13,6 +15,7 @@ const HomeProductCard = ({ newPrice, image, price, id, title,discount }) => {
       </div>
         <img src={image} alt="" />
       </div>
+      </Link>
       <div>
         <p>{title}</p>
         <span style={{ fontSize: "17px", color: "red" }}>${price}</span>

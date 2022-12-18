@@ -1,0 +1,26 @@
+.container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.productsdata{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+
+@media (max-width:1200px){
+    .productsdata {
+      grid-template-columns: repeat(3,1fr);
+      padding: 40px;
+    }
+  }
+
+
+  @media (max-width:600px){
+    .productsdata {
+      grid-template-columns: repeat(2,1fr);
+      padding: 40px;
+    }
+  }

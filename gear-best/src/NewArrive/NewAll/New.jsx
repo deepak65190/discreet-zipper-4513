@@ -9,7 +9,7 @@ import NewCaro from './NewCaro';
 import Dotdotdot from 'react-dotdotdot';
 import Navbar from '../../Navbar/Navbar';
 import Footer from '../../Footer/Footer';
-// import CommonHeader from '../../Navbar/CommonHeader';
+import CommonHeader from '../../Navbar/CommonHeader';
 
 
 const nav =[
@@ -59,7 +59,7 @@ const New = () => {
     return (
       <div className={styles.container}>
         <Navbar />
-        {/* <CommonHeader /> */}
+        <CommonHeader />
         <NewCaro />
       
         <div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
-import image1 from "../assets/Sparkle.png";
-import Category from "../Category/Category"
+import image1 from "../assets/logo.png"
+import SearchBar from "../Search/SearchBar";
 
 import {
   Box,
@@ -35,12 +35,12 @@ function Navbar() {
 
   return (
     <>
- 
+   <section id="Navbar">
     <Box
     
       p="10px"
       pb='0px'
-      width='90%'
+      width='80%'
       maxw="1200px"
       className="navbarBox"
       display="flex"
@@ -50,7 +50,7 @@ function Navbar() {
       // top='0px'
       margin='auto'
       // zIndex='10'
-      background={'#f8f9fa'}
+      background={'#fff'}
       
       
   
@@ -69,10 +69,7 @@ function Navbar() {
       </Center>
       <Box className="navSecondBox" flexGrow="60%">
         <Flex p="10px" gap="20px" flexDir="row-reverse" >
-          {/* <Text fontSize="14px" fontWeight="300" cursor="pointer">
-            Country Website
-            <select value="Global">Global(English)</select>
-          </Text> */}
+          
            <Menu isOpen={isOpen}>
             <MenuButton
                 variant="ghost"
@@ -111,7 +108,7 @@ function Navbar() {
           </Text>
         </Flex>
         <Flex p="10px" gap="40px" flexDir="row-reverse">
-          <Link to="/cart">
+          <Link>
             <Center cursor="pointer" gap="10px">
               <Icon boxSize="1.8rem" as={AiOutlineShoppingCart} className="cartLogo" />
               <Text fontSize="1.05rem">Cart</Text>
@@ -129,8 +126,9 @@ function Navbar() {
             <Text fontSize="1.05rem">Log In</Text>
             </Center>
           </Link>
-          <Flex h="35px" border="2.2px solid #3a86ff" borderRadius="25px">
-            <Input
+          <Flex zIndex='1'>
+          {/* h="35px" border="2.2px solid yellow" borderRadius="25px" */}
+            {/* <Input
               h="100%"
               w="150vw"
               className="NavInput"
@@ -140,12 +138,14 @@ function Navbar() {
               fontSize="1rem"
               placeholder="Product Tag"
               py="-4px"
-            />
-            <Button h="100%" borderRadius="30px" color="black.600" backgroundColor='yellow.400'>
-              <Center>
+            /> */}
+            <SearchBar />
+            {/* <Button h="100%" borderRadius="30px" color="black.600" backgroundColor='yellow.400'> 
+               <Center>
                 <Icon boxSize="1.3rem" as={AiOutlineSearch}></Icon>
               </Center>
-            </Button>
+            </Button> */}
+            
           </Flex>
         </Flex>
       </Box>
@@ -162,10 +162,10 @@ function Navbar() {
               <Link>
                 <MenuItem>Wish List</MenuItem>
               </Link>
-              <Link to="/cart">
+              <Link>
                 <MenuItem>Cart</MenuItem>
               </Link>
-              <Link to="/products">
+              <Link to='/product'>
                 <MenuItem>Mobiles</MenuItem>
               </Link>
               <Link>
@@ -181,8 +181,7 @@ function Navbar() {
     
       
     </Box>
-
-    <Category />
+    </section>
     </>
   );
 }

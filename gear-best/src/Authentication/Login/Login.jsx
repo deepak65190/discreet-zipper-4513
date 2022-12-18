@@ -1,15 +1,19 @@
 import styles from "./Login.module.css";
 import { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
+
 let data=JSON.parse(localStorage.getItem('userData'))
 const Login = () => {
     const [email,setEmail]=useState('')
     const [pass,setPass]=useState('');
     const navigate=useNavigate()
-   const handleSubmit=(e)=>{
+  
+const handleSubmit=(e)=>{
 e.preventDefault();
  if(data.email==email && data.password==pass){
-  navigate('')
+  console.log(data,email,pass)
+  navigate("/")
  }else{
   alert("no")
 
@@ -28,7 +32,9 @@ e.preventDefault();
         <div className={styles.form}>
           <div>
             <span>SIGN IN</span>
+            <Link to='/signup'>
             <span>REGISTER</span>
+            </Link>
           </div>
           <div>
             <form className={styles.login} onSubmit={handleSubmit}>
