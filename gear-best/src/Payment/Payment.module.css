@@ -1,0 +1,61 @@
+.container{
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.container>div{
+    width: 100%;
+   text-align: center;
+}
+.form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px ;
+    border-radius: 4px;
+}
+.container img{
+    height: 60px;
+    margin-top: 40px;
+}
+.form form>input{
+    outline: 1px solid #FFDA00;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 3px 5px;
+}
+.container form{
+    width: 60%;
+    margin: auto;
+text-align: justify;
+
+}
+.btn{
+    background-color: #FFDA00;
+    font-weight: 700;
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container label{
+    color: rgb(85, 84, 84);
+}
+.container form>div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.form h1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.payment{
+    margin-top: 40px;
+}
+.radio{
+    outline: none;
+}

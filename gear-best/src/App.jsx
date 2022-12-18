@@ -8,6 +8,7 @@ import Login from "./Authentication/Login/Login"
 import Signup from "./Authentication/Signup/Signup";
 import MainRoutes from './AllRoutes/mainRoutes';
 import CommonHeader from './Navbar/CommonHeader';
+import Payment from './Payment/Payment';
 
 function App() {
   return (
@@ -17,10 +18,10 @@ function App() {
       {/* <Products />  */}
       {/* <Navbar/> */}
       {/* <CommonHeader /> */}
-      <MainRoutes />
+      {/* <MainRoutes /> */}
       {/* <Login/> */}
       {/* <Signup/> */}
-
+      <Payment/>
     </div>
   )
 
