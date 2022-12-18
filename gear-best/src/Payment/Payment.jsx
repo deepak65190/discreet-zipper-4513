@@ -2,17 +2,7 @@ import styles from "./Payment.module.css";
 import { useState,useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-let initialDetails={
-  name:'',
-  email:'',
-  address:'',
-  city:'',
-  district:'',
-  phone:'',
-  mode:''
-}
 const Payment = () => {
-  const [data,setData]=useState(initialDetails)
   const [fname,setFName]=useState('')
   const [lname,setLName]=useState('')
   const [email,setEmail]=useState('')
@@ -30,11 +20,10 @@ setMode(e.target.value)
 
   const handleSubmit=(e)=>{
     e.preventDefault();
-    if(fname==='' || lname==='' || email==='' || address==='' || city==='' || district==='' || phone==='' || state===''){
+    if(fname==='' || lname==='' || email==='' || city==='' || district==='' || phone==='' || state===''){
       alert('Fill All Credintials')
     }else{
-      setData({...data,name:`${fname} ${lname}`,email:email,address:address,city:city,district:district,phone:phone,state:state,mode:mode})
-      localStorage.setItem('userDetails',JSON.stringify(data))
+      localStorage.setItem('userDetails',JSON.stringify({name:`${fname} ${lname}`,email:email,city:city,district:district,phone:phone,state:state,mode:mode}))
     }
   }
 
