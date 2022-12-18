@@ -5,17 +5,17 @@
     justify-content:space-between;
     align-items: center;
     margin: auto;
-    border: 1px solid red;
+   
 }
 .SinglePageSeciont>div:nth-child(1){
 width:400px;
 height: 400px;
-border: 1px solid black;
+
 }
 .SinglePageSeciont>div:nth-child(2){
     width:800px;
 height: 400px;
-border: 1px solid black;
+
 }
 .SinglePageTitle{
     font-size: 18px;
@@ -44,7 +44,7 @@ border: 1px solid black;
     width: 60%;
     height: 40px;
     margin-top: 30px;
-    border: 1px solid red;
+   
 }
 .SinglePagePriceSapan{
     margin-left: 50px;
@@ -91,4 +91,7 @@ border: 1px solid black;
 .SinglePageCBPbtn>button:nth-child(3){
 background-color: #FFC439 ;
 color: #09A2DF;
+}
+.singlePageimg{
+    width: 100%;
 }

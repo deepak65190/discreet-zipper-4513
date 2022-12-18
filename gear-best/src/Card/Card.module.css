@@ -1,0 +1,27 @@
+.cardComponent{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border: 1px solid red;
+}
+.cartImg{
+    width: 100%;
+    border-radius: 10px;
+}
+.cartTitleN{
+    font-size: 14px;
+    
+}
+.inADDbtnCart{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cardComponentMap{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}

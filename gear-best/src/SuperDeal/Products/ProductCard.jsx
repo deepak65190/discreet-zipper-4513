@@ -6,17 +6,20 @@ const ProductCard = ({ newPrice, image, price, id, title }) => {
   const dis = ((discount / Number(price)) * 100).toFixed(0);
   return (
     <div className={styles.container}>
-      <Link to='/singlepage'>
       <div>
-      <div className={styles.discount}>
-       <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
-       <span style={{ fontSize: "14px", color: "white" }}>off</span>
+        <div className={styles.discount}>
+          <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
+          <span style={{ fontSize: "14px", color: "white" }}>off</span>
+        </div>
+        <Link to="/details">
+          <img src={image} alt="" />
+        </Link>
       </div>
-        <img src={image} alt="" />
-      </div>
-      </Link>
+
       <div>
-        <p>{title}</p>
+        <Link to={`/superDeal/${id}`}>
+          <p>{title}</p>
+        </Link>
         <span style={{ fontSize: "17px", color: "red" }}>${newPrice}</span>
         <br />
         <span style={{ fontSize: "13px", color: "grey" }}>RRP:</span>

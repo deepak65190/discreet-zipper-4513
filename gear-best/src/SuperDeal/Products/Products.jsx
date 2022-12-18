@@ -65,7 +65,7 @@ const Products = () => {
       </div>
       <div className={styles.productsdata}>
         {products?.map((item) => (
-          <ProductCard {...item} />
+          <ProductCard key = {item.id} {...item} />
         ))}
       </div>
       <Footer />
