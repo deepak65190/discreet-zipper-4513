@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 function CommonHeader(){
     return(
-        <Box w='100%' m='auto' fontWeight='bold' fontSize='18px'>
+        <Box w='100%' m='auto' fontWeight='bold' fontSize='18px' marginTop='32px'>
             <Flex  justifyContent='space-between' py='8px' px='100px'  bg='#FFDA00'>
                 <Link to='/superDeal'>
                 <Text fontWeight='bold' color='black'  _hover={{textDecoration:'underline',cursor:'pointer'}}>SUPER DEALS</Text>
