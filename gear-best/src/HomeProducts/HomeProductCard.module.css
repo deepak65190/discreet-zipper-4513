@@ -26,18 +26,16 @@ position: relative;
 }
 .container>div>h2{
     color: red;
-}
+} 
 .discount{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 5px;
-    right: 5px;
     width: 50px;
     text-align: center;
     height: 50px;
     background-color: red;
     border-radius: 50%;
-}
+    
+} 

@@ -18,10 +18,10 @@ function App() {
       {/* <Products />  */}
       {/* <Navbar/> */}
       {/* <CommonHeader /> */}
-      {/* <MainRoutes /> */}
+      <MainRoutes />
       {/* <Login/> */}
       {/* <Signup/> */}
-      <Payment/>
+      {/* <Payment/> */}
     </div>
   )
 

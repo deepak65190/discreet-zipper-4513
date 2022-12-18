@@ -2,6 +2,7 @@
     background: #FFFFFF;
     padding-top: 15px;
     padding-bottom: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .container>div>img{
     width: 90%;
@@ -25,7 +26,7 @@ position: relative;
 .container>div>h2{
     color: red;
 }
-.discount{
+/* .discount{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,4 +39,16 @@ position: relative;
     height: 50px;
     background-color: red;
     border-radius: 50%;
-}
+} */
+.discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    
+} 
