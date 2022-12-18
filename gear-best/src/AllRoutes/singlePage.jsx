@@ -23,16 +23,14 @@ const SinglePage = () => {
             <div>
               <img
                 className={styles.singlePageimg}
-                src="https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16457/goods_img_big-v3/b85f8302740e.jpg"
+                src={userDetails.image}
                 alt=""
               />
             </div>
             <div>
               <div className={styles.SinglePageTitleDiv}>
                 <p className={styles.SinglePageTitle}>
-                  Xiaomi WOWSTICK 1F+ Electric Precision Screwdriver Kit
-                  Rechargeable Cordless Power Screw Driver with LED Light for
-                  Repairing Work - Grey
+                 {userDetails.title}
                 </p>
               </div>
               <div className={styles.SinglePageFlashSale}>
@@ -41,8 +39,8 @@ const SinglePage = () => {
               <div className={styles.SinglePagePrice}>
                 <p>
                   <span>Price :</span>
-                  <span className={styles.SinglePagePriceSapan}>$37.99</span>
-                  <span className={styles.SinglePageOff}>33% off</span>
+                  <span className={styles.SinglePagePriceSapan}>${userDetails.price}</span>
+                  <span className={styles.SinglePageOff}>{userDetails.discount}% off</span>
                 </p>
               </div>
               

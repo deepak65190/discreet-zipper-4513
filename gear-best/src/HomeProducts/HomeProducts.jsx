@@ -12,7 +12,8 @@ const HomeProducts = () => {
   const dispatch = useDispatch();
   const data = useSelector((store) => store);
   
-
+  let homeproduct = data.homeProductReducer.data;
+  console.log(homeproduct)
   useEffect(() => {
     dispatch(getHomeProductData);
   }, []);
@@ -20,7 +21,7 @@ const HomeProducts = () => {
   return (
     <div className={styles.container}>
       <div className={styles.productsdata}>
-        {data?.data?.map((item) => (
+        {homeproduct?.map((item) => (
           <HomeProductCard {...item} />
         ))}
       </div>

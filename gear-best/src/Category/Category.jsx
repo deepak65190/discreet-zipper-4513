@@ -2,6 +2,7 @@ import React from 'react'
 import { Text,Box,Flex, HStack, Image,Grid,GridItem } from '@chakra-ui/react'
 import Carousel from "./Carousal";
 import './Category.css';
+import CommonHeader from '../Navbar/CommonHeader';
 
 function Hero() {
   return (
@@ -31,11 +32,12 @@ function Hero() {
                 <Texty text="GearBest Promotion"/>
             </Box>
             <Box w='80%'>
-                <Flex  justifyContent='space-between' py='8px' px='100px'  bg='#FFDA00'>
+                {/* <Flex  justifyContent='space-between' py='8px' px='100px'  bg='#FFDA00'>
                     <Text fontWeight='bold' color='black'>SUPER DEALS</Text>
                     <Text fontWeight='bold' color='black'>APP ONLY</Text>
                     <Text fontWeight='bold' color='black'>NEW ARRIVAL</Text>
-                </Flex>
+                </Flex> */}
+                <CommonHeader />
                 <Box>
                     <Box padding='24px'>
                    <Carousel/>

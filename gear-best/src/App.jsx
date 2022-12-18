@@ -6,14 +6,18 @@ import NewCaro from './NewArrive/NewAll/NewCaro';
 import Products from './SuperDeal/Products/Products';
 import Login from "./Authentication/Login/Login"
 import Signup from "./Authentication/Signup/Signup";
+import MainRoutes from './AllRoutes/mainRoutes';
+import CommonHeader from './Navbar/CommonHeader';
 
 function App() {
   return (
     <div className="App">
-     <Homepage />
+     {/* <Homepage /> */}
       {/* <New /> */}
       {/* <Products />  */}
       {/* <Navbar/> */}
+      {/* <CommonHeader /> */}
+      <MainRoutes />
       {/* <Login/> */}
       {/* <Signup/> */}
 

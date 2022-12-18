@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import image1 from "../assets/Sparkle.png";
+import Category from "../Category/Category"
 
 import {
   Box,
@@ -48,7 +49,7 @@ function Navbar() {
       // position={'fixed'}
       // top='0px'
       margin='auto'
-      // zIndex='200'
+      // zIndex='10'
       background={'#f8f9fa'}
       
       
@@ -158,7 +159,7 @@ function Navbar() {
               <Link to="/signup">
                 <MenuItem>Sign up</MenuItem>
               </Link>
-              <Link to="/wishlist">
+              <Link>
                 <MenuItem>Wish List</MenuItem>
               </Link>
               <Link to="/cart">
@@ -167,7 +168,7 @@ function Navbar() {
               <Link to="/products">
                 <MenuItem>Mobiles</MenuItem>
               </Link>
-              <Link to="/products">
+              <Link>
                 <MenuItem>
                 <Input type="search" placeholder="Search here..." border="2px solid black"/>
                 </MenuItem>
@@ -175,11 +176,13 @@ function Navbar() {
             </MenuList>
           </Menu>
         </Center>
+      
       </Box>
+    
       
     </Box>
 
- 
+    <Category />
     </>
   );
 }
