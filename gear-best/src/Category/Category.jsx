@@ -2,7 +2,7 @@ import React from 'react'
 import { Text,Box,Flex, HStack, Image,Grid,GridItem } from '@chakra-ui/react'
 import Carousel from "./Carousal";
 import './Category.css';
-import CommonHeader from '../Navbar/CommonHeader';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -32,12 +32,18 @@ function Hero() {
                 <Texty text="GearBest Promotion"/>
             </Box>
             <Box w='80%'>
-                {/* <Flex  justifyContent='space-between' py='8px' px='100px'  bg='#FFDA00'>
+                <Flex  justifyContent='space-between' py='8px' px='100px'  bg='#FFDA00'>
+                    <Link to='/superDeal'>
                     <Text fontWeight='bold' color='black'>SUPER DEALS</Text>
+                    </Link>
+                    <Link to='/apponly'>
                     <Text fontWeight='bold' color='black'>APP ONLY</Text>
+                    </Link>
+                    <Link to='/new'>
                     <Text fontWeight='bold' color='black'>NEW ARRIVAL</Text>
-                </Flex> */}
-                <CommonHeader />
+                    </Link>
+                </Flex>
+                {/* <CommonHeader /> */}
                 <Box>
                     <Box padding='24px'>
                    <Carousel/>

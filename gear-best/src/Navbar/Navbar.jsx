@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import image1 from "../assets/Sparkle.png";
+import image1 from "../assets/logo.png"
 import Category from "../Category/Category"
 
 import {
@@ -108,7 +108,7 @@ function Navbar() {
           </Text>
         </Flex>
         <Flex p="10px" gap="40px" flexDir="row-reverse">
-          <Link to="/cart">
+          <Link>
             <Center cursor="pointer" gap="10px">
               <Icon boxSize="1.8rem" as={AiOutlineShoppingCart} className="cartLogo" />
               <Text fontSize="1.05rem">Cart</Text>
@@ -159,10 +159,10 @@ function Navbar() {
               <Link>
                 <MenuItem>Wish List</MenuItem>
               </Link>
-              <Link to="/cart">
+              <Link>
                 <MenuItem>Cart</MenuItem>
               </Link>
-              <Link to="/products">
+              <Link to='/product'>
                 <MenuItem>Mobiles</MenuItem>
               </Link>
               <Link>
@@ -179,8 +179,6 @@ function Navbar() {
       
     </Box>
     </section>
-
-    <Category />
     </>
   );
 }
