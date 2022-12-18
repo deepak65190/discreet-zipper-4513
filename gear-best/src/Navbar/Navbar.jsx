@@ -35,12 +35,12 @@ function Navbar() {
 
   return (
     <>
- 
+   <section id="Navbar">
     <Box
     
       p="10px"
       pb='0px'
-      width='90%'
+      width='80%'
       maxw="1200px"
       className="navbarBox"
       display="flex"
@@ -50,7 +50,7 @@ function Navbar() {
       // top='0px'
       margin='auto'
       // zIndex='10'
-      background={'#f8f9fa'}
+      background={'#fff'}
       
       
   
@@ -69,10 +69,7 @@ function Navbar() {
       </Center>
       <Box className="navSecondBox" flexGrow="60%">
         <Flex p="10px" gap="20px" flexDir="row-reverse" >
-          {/* <Text fontSize="14px" fontWeight="300" cursor="pointer">
-            Country Website
-            <select value="Global">Global(English)</select>
-          </Text> */}
+          
            <Menu isOpen={isOpen}>
             <MenuButton
                 variant="ghost"
@@ -181,6 +178,7 @@ function Navbar() {
     
       
     </Box>
+    </section>
 
     <Category />
     </>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Row2() {
   return (
     <section id='recommend'>
-    <div className='row2MainDiv' style={{width:"90%",margin:"auto"}}>
+    <div className='row2MainDiv' style={{width:"80%",margin:"auto"}}>
       <HStack gap='28px' mb='20px' ml='15px'>
         <Icon boxSize='40px' as={FaRegThumbsUp} />
         <Text fontSize='2rem' fontWeight='bold'>RECOMMENDED FOR YOU</Text>

@@ -7,7 +7,7 @@ import CommonHeader from '../Navbar/CommonHeader';
 function Hero() {
   return (
     <>
-    <Box  className='heroNone' w="90%" margin="auto">
+    <Box  className='heroNone' w="80%" margin="auto">
         <Flex justifyContent={'center'}>
             <Box display={['none','none','block']} height='560px' overflow='auto' bg='#ECF6FF' w='20%' minW='130px'>
                 <Text h='40px' boxSizing='border-box' bg='black' p='3px 0' color='white' textAlign='center' fontWeight='bold' fontSize='1.45rem'>Category</Text>
