@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import image1 from "../assets/logo.png"
-import Category from "../Category/Category"
+import SearchBar from "../Search/SearchBar";
 
 import {
   Box,
@@ -126,8 +126,9 @@ function Navbar() {
             <Text fontSize="1.05rem">Log In</Text>
             </Center>
           </Link>
-          <Flex h="35px" border="2.2px solid #3a86ff" borderRadius="25px">
-            <Input
+          <Flex zIndex='1'>
+          {/* h="35px" border="2.2px solid yellow" borderRadius="25px" */}
+            {/* <Input
               h="100%"
               w="150vw"
               className="NavInput"
@@ -137,12 +138,14 @@ function Navbar() {
               fontSize="1rem"
               placeholder="Product Tag"
               py="-4px"
-            />
-            <Button h="100%" borderRadius="30px" color="black.600" backgroundColor='yellow.400'>
-              <Center>
+            /> */}
+            <SearchBar />
+            {/* <Button h="100%" borderRadius="30px" color="black.600" backgroundColor='yellow.400'> 
+               <Center>
                 <Icon boxSize="1.3rem" as={AiOutlineSearch}></Icon>
               </Center>
-            </Button>
+            </Button> */}
+            
           </Flex>
         </Flex>
       </Box>
