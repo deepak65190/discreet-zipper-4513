@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import styles from "./SinglePage.module.css";
 import { useToast } from "@chakra-ui/react";
 import { Button} from "@chakra-ui/react";
+import Navbar from "../Navbar/Navbar";
+
 const getData = (url) => {
   return fetch(url).then((res) => res.json());
 };
@@ -39,7 +41,8 @@ let l = JSON.parse(localStorage.getItem("card")) ;
 
   return (
     <>
-      <div>
+    <Navbar />
+      <div style={{marginTop:"90px"}}>
         <section>
           <div className={styles.SinglePageSeciont}>
             <div>
@@ -82,8 +85,11 @@ let l = JSON.parse(localStorage.getItem("card")) ;
                 >
                   Add to Card
                 </Button> */}
+
                 <button onClick={handleLocal}>add to card</button>
+              
                 <button>Buy Now</button>
+
                 <button>PayPal</button>
               </div>
             </div>

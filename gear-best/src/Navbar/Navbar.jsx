@@ -108,7 +108,7 @@ function Navbar() {
           </Text>
         </Flex>
         <Flex p="10px" gap="40px" flexDir="row-reverse">
-          <Link>
+          <Link to="/cart">
             <Center cursor="pointer" gap="10px">
               <Icon boxSize="1.8rem" as={AiOutlineShoppingCart} className="cartLogo" />
               <Text fontSize="1.05rem">Cart</Text>
@@ -162,7 +162,7 @@ function Navbar() {
               <Link>
                 <MenuItem>Wish List</MenuItem>
               </Link>
-              <Link>
+              <Link to="/cart">
                 <MenuItem>Cart</MenuItem>
               </Link>
               <Link to='/product'>

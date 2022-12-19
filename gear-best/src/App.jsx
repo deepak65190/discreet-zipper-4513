@@ -18,7 +18,7 @@ function App() {
       {/* <Products />  */}
       {/* <Navbar/> */}
       {/* <CommonHeader /> */}
-      <Navbar/>
+      {/* <Navbar/> */}
       <MainRoutes />
       {/* <Login/> */}
       {/* <Signup/> */}

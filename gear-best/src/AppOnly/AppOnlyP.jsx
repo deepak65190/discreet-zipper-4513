@@ -1,4 +1,5 @@
 import styles from "./AppOnlyP.module.css";
+import {Link} from "react-router-dom";
 
 
 const AppOnlyP = ({ newPrice, image, price, id, title,discount }) => {
@@ -6,7 +7,7 @@ const AppOnlyP = ({ newPrice, image, price, id, title,discount }) => {
   // const dis = ((discount / Number(price)) * 100).toFixed(0);
   const dis= discount;
   return (
-  
+  <Link to='/details'>
     <div className={styles.container}>
       <div>
       {/* <div className={styles.discount}>
@@ -25,6 +26,7 @@ const AppOnlyP = ({ newPrice, image, price, id, title,discount }) => {
         </span>
       </div>
     </div>
+    </Link>
   );
 };
 export default AppOnlyP;

@@ -2,6 +2,8 @@ import React from "react";
 import CardMap from "./CardMap";
 import styles from "./Card.module.css";
 import { useState } from "react";
+import {Button} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   let getDataLocal = JSON.parse(localStorage.getItem("card")) || [];
@@ -34,7 +36,9 @@ const Card = () => {
           <CardMap key={i} data={ite}  handleDataChange={handleDataChange} />
         );
       })}
-      <div>{data.reduce((sum, el) => (sum = sum + el.price), 0)}</div>
+     <Link to='/payment'>
+      <Button colorScheme='teal' marginLeft='50%' padding="30px">PAY {data.reduce((sum, el) => (sum = sum + el.price), 0)} </Button>
+      </Link>
     </div>
   );
 };

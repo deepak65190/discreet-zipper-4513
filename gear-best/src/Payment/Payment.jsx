@@ -1,8 +1,9 @@
 import styles from "./Payment.module.css";
 import { useState,useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import {useNavigate, useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 const Payment = () => {
+  const navigate=useNavigate();
   const [fname,setFName]=useState('')
   const [lname,setLName]=useState('')
   const [email,setEmail]=useState('')
@@ -32,6 +33,10 @@ let params={};
 params.mode=mode
 setSearchParams(params)
 },[setSearchParams,mode])
+const handleClick=()=>{
+  alert ("payment Successful");
+  navigate("/")
+}
 
   return (
     <div className={styles.container}>
@@ -99,7 +104,7 @@ setSearchParams(params)
                 />
                 <label>Net Banking</label>
               </div>
-              <button className={styles.btn} type="submit">Continue</button>
+              <button className={styles.btn} type="submit" onClick={handleClick} >Continue</button>
             </div>
           </form>
         </div>

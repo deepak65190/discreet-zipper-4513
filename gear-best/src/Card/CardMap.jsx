@@ -41,7 +41,7 @@ const CardMap = ({ data, handleDataChange }) => {
           >
             +
           </Button>
-          <Button>{data.quantity}</Button>
+          <Button>1</Button>
           <Button
             disabled={data.quantity === 1}
             className={styles.inADDbtnCart}
@@ -53,7 +53,7 @@ const CardMap = ({ data, handleDataChange }) => {
           </Button>
         </div>
         <div>
-          <Button colorScheme="blue">${data.price} Total</Button>
+          <Button colorScheme="blue" >${data.price} Total</Button>
         </div>
         <div>
           <button onClick={() => handleDelete(data.id)}>
