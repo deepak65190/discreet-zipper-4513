@@ -43,20 +43,43 @@ const Products = () => {
  
   return (
     <div className={styles.container}>
-    <Navbar />
-    <CommonHeader />
-    <Navbar1/>
+      <Navbar />
+      <CommonHeader />
+      <Navbar1 />
       <div className={styles.productsnav}>
-        <span>Sort By:</span>
+        <span style={{ color: "red" }}>Sort By:</span>
         <div>
-          <span onClick={() => setClas("recommend")} className={clas=="recommend"? styles.price:''}>Recommend</span>
-          <span onClick={() => setClas("hottest")} className={clas=="hottest"? styles.price:''}>Hottest</span>
-          <span onClick={() => setClas("newest")} className={clas=="newest"? styles.price:''}>Newest</span>
-          <span onClick={() => setClas("price")}  className={clas=="price"? styles.price:''} >
+          <span
+            onClick={() => setClas("recommend")}
+            className={clas == "recommend" ? styles.price : ""}
+          >
+            Recommend
+          </span>
+          <span
+            onClick={() => setClas("hottest")}
+            className={clas == "hottest" ? styles.price : ""}
+          >
+            Hottest
+          </span>
+          <span
+            onClick={() => setClas("newest")}
+            className={clas == "newest" ? styles.price : ""}
+          >
+            Newest
+          </span>
+          <span
+            style={{ color: "red" }}
+            onClick={() => setClas("price")}
+            className={clas == "price" ? styles.price : ""}
+          >
             Price
             <GoTriangleUp />
           </span>
-          <span onClick={() => setClas("discount")} className={clas=="discount"? styles.price:''}>
+          <span
+            style={{ color: "red" }}
+            onClick={() => setClas("discount")}
+            className={clas == "discount" ? styles.price : ""}
+          >
             Discount
             <GoTriangleDown />
           </span>
@@ -64,12 +87,11 @@ const Products = () => {
       </div>
       <div className={styles.productsdata}>
         {products?.map((item) => (
-          <ProductCard key = {item.id} {...item} />
+          <ProductCard key={item.id} {...item} />
         ))}
       </div>
       <Footer />
     </div>
-    
   );
 };
 export default Products;
