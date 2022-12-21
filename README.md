@@ -1,4 +1,11 @@
 # discreet-zipper-4513
+## How to run Application ?
+### LS 
+### CD discreet-zipper-4513
+### LS 
+## cd gear-best
+## NPM Install 
+## NPM RUN DEV
 This is the clone of GearBest website . It is a ecommerce website .Online Shopping at Gearbest for the best cell phones, electronic gadgets, toys, sporting goods, home products and apparel for geeks at unbeatable great.
 <div>
 All Team Members
