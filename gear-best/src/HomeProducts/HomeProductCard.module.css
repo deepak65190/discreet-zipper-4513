@@ -39,3 +39,6 @@ position: relative;
     border-radius: 50%;
     
 } 
+.titlePh:hover{
+    color: teal;
+}

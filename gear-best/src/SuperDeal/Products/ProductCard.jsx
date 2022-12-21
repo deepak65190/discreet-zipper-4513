@@ -11,20 +11,22 @@ const ProductCard = ({ newPrice, image, price, id, title }) => {
           <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
           <span style={{ fontSize: "14px", color: "white" }}>off</span>
         </div>
-        <Link to="/details">
+        <Link to={`/superDeal/${id}`}>
           <img src={image} alt="" />
         </Link>
       </div>
 
       <div>
         <Link to={`/superDeal/${id}`}>
-          <p>{title}</p>
+          <p className={styles.titleP}>{title}</p>
         </Link>
-        <span style={{ fontSize: "17px", color: "red" }}>${newPrice}</span>
+        <span style={{ fontSize: "17px", color: "red", cursor: "default" }}>
+          ${newPrice}
+        </span>
         <br />
         <span style={{ fontSize: "13px", color: "grey" }}>RRP:</span>
         <span style={{ fontSize: "13px", color: "grey" }}>
-          <del>${price}</del>
+          <del style={{ cursor: "default" }}>${price}</del>
         </span>
       </div>
     </div>

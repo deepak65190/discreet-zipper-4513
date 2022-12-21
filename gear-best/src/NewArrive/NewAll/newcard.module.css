@@ -47,3 +47,6 @@ position: relative;
     background-color: red;
     border-radius: 50%;
 }
+.titlePN:hover{
+    color: teal;
+}

@@ -7,22 +7,29 @@ const HomeProductCard = ({ newPrice, image, price, id, title,discount }) => {
   const dis= discount;
   return (
     <div className={styles.container}>
-      <Link to='/singlepage'>
       <div>
-      <div className={styles.discount}>
-       <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
-       <span style={{ fontSize: "14px", color: "white" }}>off</span>
+        <div className={styles.discount}>
+          <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
+          <span style={{ fontSize: "14px", color: "white" }}>off</span>
+        </div>
+        <Link to={`/superDeal/${id}`}>
+          <img src={image} alt="" />
+        </Link>
       </div>
-        <img src={image} alt="" />
-      </div>
-      </Link>
+
       <div>
-        <p>{title}</p>
-        <span style={{ fontSize: "17px", color: "red" }}>${price}</span>
+        <Link to={`/superDeal/${id}`}>
+          <p className={styles.titlePh}>{title}</p>
+        </Link>
+        <span style={{ fontSize: "17px", color: "red", cursor: "default" }}>
+          ${price}
+        </span>
         <br />
         <span style={{ fontSize: "13px", color: "grey" }}>RRP:</span>
         <span style={{ fontSize: "13px", color: "grey" }}>
-          <del>${price}</del>
+          <del style={{  cursor: "default" }}>
+            ${price}
+          </del>
         </span>
       </div>
     </div>
