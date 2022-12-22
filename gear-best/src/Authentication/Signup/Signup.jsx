@@ -12,9 +12,9 @@ const SignUp = () => {
 e.preventDefault();
 if(email!=='' || pass!==''){
     localStorage.setItem('userData',JSON.stringify({"email":email,"password":pass}));
-    // navigate('/login')
+    navigate('/login')
 }else{
-    alert('put pass')
+    alert('something went wrong')
 }
 
 

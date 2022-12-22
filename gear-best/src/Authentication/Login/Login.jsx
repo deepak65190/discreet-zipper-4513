@@ -15,7 +15,7 @@ e.preventDefault();
   console.log(data,email,pass)
   navigate("/")
  }else{
-  alert("no")
+  alert("wrong credentail")
 
  }
 
@@ -32,17 +32,29 @@ e.preventDefault();
         <div className={styles.form}>
           <div>
             <span>SIGN IN</span>
-            <Link to='/signup'>
-            <span>REGISTER</span>
+            <Link to="/signup">
+              <span>REGISTER</span>
             </Link>
           </div>
           <div>
             <form className={styles.login} onSubmit={handleSubmit}>
-              <input type="email" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} /><br />
-              <input type="password" placeholder="Create password" onChange={(e)=>setPass(e.target.value)}/><br />
-             
-              <button className={styles.btn} type="submit" >Login</button>
-             
+              <input
+                type="email"
+                placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <br />
+              <input
+                type="password"
+                placeholder="Create password"
+                onChange={(e) => setPass(e.target.value)}
+              />
+              <br />
+              <Link to="/">
+                <button className={styles.btn} type="submit">
+                  Login
+                </button>
+              </Link>
             </form>
           </div>
         </div>
