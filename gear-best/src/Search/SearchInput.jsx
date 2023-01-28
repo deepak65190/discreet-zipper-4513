@@ -1,6 +1,10 @@
+import { Icon, SearchIcon } from '@chakra-ui/icons';
+import { Button, Center } from '@chakra-ui/react';
 import React,{useEffect, useState,useRef} from 'react';
+import { AiOutlineSearch } from 'react-icons/ai';
 import styled from 'styled-components';
 import {useThrottle} from 'use-throttle';
+
 
 function SearchInput({queryHandler,suggestions}) {
 
@@ -57,7 +61,14 @@ function SearchInput({queryHandler,suggestions}) {
      <Wrapper onKeyUp={handleActiveSuggestions}>
         <SearchBarWrapper>
           <Input placeholder='Search products...' value={input} onChange={handleInputChange} />
+          {/* <SearchIcon /> */}
+          <Button h="100%" borderRightRadius="30px" borderLeftRadius="0" p="0px 10px" color="white" backgroundColor='#0069ff'> 
+               <Center>
+                <Icon boxSize="2rem" as={AiOutlineSearch}></Icon>
+              </Center>
+            </Button>
       </SearchBarWrapper>
+     
       <SuggestionBox 
       limit={3} 
       suggestionsLength={suggestions.length}
@@ -107,7 +118,9 @@ border-bottom-color:${({suggestionsLength}) => (suggestionsLength ? 'black' : 't
 
 const SearchBarWrapper = styled.div`
 display:flex;
-border:3px solid yellow;
+// border:1px solid yellow;
+border-radius:80px;
+// padding:5px;
 width:400px;
 `
 
@@ -116,6 +129,10 @@ flex:1;
 fontSize:20px;
 border:none;
 outline:none;
+padding-left:20px;
+border-radius:20px 0px 0px 20px;
+// margin:auto;
+background-color:#f0f1f4;
 
 // h="100%";
 // w="150vw";
