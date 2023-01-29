@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+}
+
+
+.footerContainer{
+width:100%;
+height: auto;
+margin: auto;
+background-color: #6C6F72;
+
+}
+.h3footer{
+    margin-top: 50px;
+}
+.contactSec{
+    width: 80%;
+    height: auto;
+    margin:auto;
+    
+    margin-bottom: 100px;
+    display: flex;
+justify-content: center;
+
+    background-color:#6C6F72 ;
+}
+.copyWriteSec{
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  
+    font-size: 14px;
+    align-items: center;
+    background-color: #1B1D20;
+}
+.contactSec>div{
+    width: 25%;
+    height: auto;
+    
+    color: white;
+    
+}
+.ulOfCompany>li{
+margin-top: 10px;
+font-size: 14px;
+list-style-type: none;
+}
+.ulOfCompany>li:hover{
+    color: #0069FF;
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+.inputOfFooter{
+    height: 40px;
+    size: 30px;
+    border-radius: 10px ;
+    color: black;
+    resize: none;
+    outline: none;
+    border: 2ppx solid wheat;
+}
+.inputOfFooter::placeholder{
+    font-size: 12px;
+    text-align: center;
+}
+.subsBtn{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+    background-color:#0069FF ;
+    color:  white;
+    border-radius: 10px;
+    
+    
+}
+.go{
+    width: 100%;
+    height: auto;
+    background-color: #6C6F72;
+    color: white;
+}
+.ulOfCompanySmll>li{
+        margin-top: 10px;
+font-size: 14px;
+list-style-type: none;
+
+    }
+@media only screen and (min-width: 639px){
+    .go{
+display: none;
+    }
+    .foterh2chakra{
+        margin-left: 5%;
+    }
+.copuwritegb{
+    text-align: justify;
+    color: gray;
+    font-size: 10px;
+}
+}
+@media only screen and (max-width: 638px){
+.footerContainer{
+    display: none;
+}
+}

@@ -26,8 +26,8 @@ function MainRoutes() {
       <Route path='/login' element={<Login />}></Route>
       <Route path='/new' element={<New />}></Route>
       <Route path="/new/:productId" element={<SinglePage />}></Route>
-      <Route path="*" element={<NotFound />} />
       <Route path='/payment' element={<Payment />}></Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

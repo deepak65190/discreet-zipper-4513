@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import styles from "./SinglePage.module.css";
-import { useToast } from "@chakra-ui/react";
-import { Button} from "@chakra-ui/react";
+import { localStorageManager, useToast } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import Navbar from "../Navbar/Navbar";
 
 const getData = (url) => {
@@ -12,37 +12,53 @@ const getData = (url) => {
 const SinglePage = () => {
   const toast = useToast();
   const { productId } = useParams();
- 
-  const [userDetails, setUserDetails] = React.useState({});
-let l = JSON.parse(localStorage.getItem("card")) ; 
-  const [local ,setLocal] = React.useState(l||[]) ;
-  console.log(local)
-  const handleLocal = ()=>{
-    setLocal([...local,{
-      id:userDetails.id ,
-      image :userDetails.image ,
-      price :userDetails.price ,
-      title:userDetails.title
-    }]) ;
-    // if(l.id)
-   localStorage.setItem("card", JSON.stringify(local));
-  }
 
-  React.useEffect(() => { 
+  const [userDetails, setUserDetails] = React.useState({});
+  let arr = JSON.parse(localStorage.getItem("card")) || [];
+
+  //const [local ,setLocal] = React.useState(l||[]) ;
+  // console.log(local)
+  // const handleLocal = ()=>{
+  //   setLocal([...local,{
+  //     id:userDetails.id ,
+  //     image :userDetails.image ,
+  //     price :userDetails.price ,
+  //     title:userDetails.title
+  //   }]) ;
+  //   // if(l.id)
+  //  localStorage.setItem("card", JSON.stringify(local));
+  // }
+
+  const handleLocal = () => {
+    console.log("hiii");
+    let data = {
+      id: "1",
+      image:
+        "https://www.gearbest.com/u_file/2301/13/products/SKU-01-128GBBlack-b92d.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
+
+      price: 500,
+      title: "ram",
+    };
+    arr.push(data);
+    console.log(arr);
+    localStorage.setItem("card", JSON.stringify(arr));
+    toast({
+      title: "product added to cart",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
+  };
+  React.useEffect(() => {
     getData(
       `https://database-json-server.vercel.app/allData/${productId}`
     ).then((res) => setUserDetails(res));
-    
   }, [productId]);
-
-
-    
-  
 
   return (
     <>
-    <Navbar />
-      <div style={{marginTop:"90px"}}>
+      
+      <div style={{ marginTop: "90px" }}>
         <section>
           <div className={styles.SinglePageSeciont}>
             <div>
@@ -86,11 +102,7 @@ let l = JSON.parse(localStorage.getItem("card")) ;
                   Add to Card
                 </Button> */}
 
-                <button onClick={handleLocal}>add to card</button>
-              
-                <button>Buy Now</button>
-
-                <button>PayPal</button>
+                <button onClick={handleLocal}>add to cart</button>
               </div>
             </div>
           </div>

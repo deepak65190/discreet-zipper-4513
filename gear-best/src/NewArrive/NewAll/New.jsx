@@ -58,7 +58,7 @@ const New = () => {
   
     return (
       <div className={styles.container}>
-        <Navbar />
+        
         <CommonHeader />
         <NewCaro />
       
@@ -90,7 +90,7 @@ const New = () => {
               ))}
             </div>
         </div>
-        <Footer />
+      
       </div>
     );
 }
