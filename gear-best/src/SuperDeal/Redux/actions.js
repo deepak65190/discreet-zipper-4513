@@ -10,12 +10,13 @@ export const getProductData = async (dispatch) => {
     type: GET_PRODUCTS_LOADING,
   });
   try {
-    const res = await axios.get('https://database-json-server.vercel.app/superDeal');
+    const res = await axios.get("https://reqres.in/api/users?page=2");
+    
     dispatch({
       type: GET_PRODUCTS_SUCCESS,
-      payload: res.data,
+      payload: res.data.data,
     });
-    return res.data;
+    return res.data.data;
   } catch (e) {
     dispatch({
       type: GET_PRODUCTS_ERROR,

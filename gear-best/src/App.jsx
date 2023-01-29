@@ -9,20 +9,13 @@ import Signup from "./Authentication/Signup/Signup";
 import MainRoutes from './AllRoutes/mainRoutes';
 import CommonHeader from './Navbar/CommonHeader';
 import Payment from './Payment/Payment';
-
+import NewFooter from './newFooter/newFooter';
 function App() {
   return (
     <div className="App">
-     {/* <Homepage /> */}
-      {/* <New /> */}
-      {/* <Products />  */}
-      {/* <Navbar/> */}
-      {/* <CommonHeader /> */}
-      {/* <Navbar/> */}
+    <Navbar/>
       <MainRoutes />
-      {/* <Login/> */}
-      {/* <Signup/> */}
-      {/* <Payment/> */}
+     <NewFooter/>
     </div>
   )
 
