@@ -13,15 +13,15 @@ const NewCaroCard = ({ price__1, image, price, id, title }) => {
             <Dotdotdot clamp={2} useNativeClamp className={styles.carotitle}>
                 {title}
             </Dotdotdot>
-            <div className={styles.discount}>
+            {/* <div className={styles.discount}>
                 <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
                 <span style={{ fontSize: "14px", color: "white" }}>OFF</span>
-            </div>
+            </div> */}
         </div>
         <div className={styles.detailsWrapper}>
             <div className={styles.details}>
-                <p style={{ fontSize: "14px", color: "grey" }}>RRP: <del>${price}</del></p>
-                <p style={{ fontSize: "20px", color: "red" }}>${price__1}</p>
+                <p style={{ fontSize: "14px", color: "red" }}>RRP: <span>${price}</span></p>
+                {/* <p style={{ fontSize: "20px", color: "red" }}>${price__1}</p> */}
             </div>
             <img className={styles.cardimg} src={image} alt="icon" />
         </div>
