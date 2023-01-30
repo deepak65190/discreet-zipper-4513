@@ -14,10 +14,10 @@ function Collection2() {
         </HStack>
         <Grid gridTemplateColumns={['repeat(1,fr)','repeat(2,1fr)','repeat(4,1fr)']} gap='30px'  padding='24px'>
 
-            <Single  url='https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16680/goods_thumb_220-v1/72d44f808ecb.jpg' price='44.99' text='Drones' />
-            <Single url='https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16678/goods_thumb_220-v1/03e5b6e88f0a.jpg' price='70' text='Tablets'/>
-            <Single url='https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16661/goods_thumb_220-v1/be4c02a13483.jpg' price='27.99' text='Mobiles'/>
-            <Single url='https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16675/goods_thumb_220-v1/e93e97cf8445.jpg' price='299.00' text='Gaming'/>
+            <Single  url='https://www.gearbest.com/u_file/2212/14/products/7940c585ef.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_240,w_240' price='44.99' text='Drones' />
+            <Single url='https://www.gearbest.com/u_file/2212/15/products/2b98f1c0d9.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_500' price='70' text='Tablets'/>
+            <Single url='https://www.gearbest.com/u_file/2212/15/products/73b058e026.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_500' price='27.99' text='Mobiles'/>
+            <Single url='https://www.gearbest.com/u_file/2301/29/products/Main-02-f7b7.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_500' price='299.00' text='Gaming'/>
 
         </Grid>
 

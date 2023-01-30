@@ -10,27 +10,27 @@ function Collection() {
    // Data for each child box
    const arr = [
       {
-         url : "https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16675/goods_thumb_220-v3/40531eb61b7a.jpg",
+         url : "https://www.gearbest.com/u_file/2212/14/products/702271c92e.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
          text: "Nimble Tech Store"
       },
       {
-         url : "https://gloimg.gbtcdn.com/soa/gb/item/6862458881155723264/16456/goods_thumb_220-v3/67f17c7e8795.jpg",
+         url : "https://www.gearbest.com/u_file/2212/14/products/0472ef5a40.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
          text: "Ortur Official Store"
       },
       {
-         url : "https://gloimg.gbtcdn.com/soa/gb/item/6507287161137004544/16384/goods_thumb_220-v1/c29e4f319b14.jpg",
+         url : "https://www.gearbest.com/u_file/2212/15/products/91f260cb45.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
          text: "Asseao Go Store"
       },
       {
-         url : "https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16585/goods_thumb_220-v1/70f4656ec542.jpg",
+         url : "https://www.gearbest.com/u_file/2212/14/products/0c6cdf40da.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
          text: "Eight Hour Store"
       },
       {
-         url : "https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16643/goods_thumb_220-v1/d7a90e41e9e6.jpg",
+         url : "https://www.gearbest.com/u_file/2212/15/products/9e684bc2e9.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
          text: "Clearance Sale"
       },
       {
-         url : "https://gloimg.gbtcdn.com/soa/gb/item/6900746726869757952/16492/goods_thumb_220-v7/b87b9802f084.jpg",
+         url : "https://www.gearbest.com/u_file/2212/15/products/SKU-01-Standard-bffc.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
          text: "Variety of Laptops"
       },
    ]

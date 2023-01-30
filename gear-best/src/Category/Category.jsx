@@ -53,10 +53,10 @@ function Hero() {
             </Box>
     </Flex>
       <Grid templateColumns='repeat(4, 1fr)' gap={3}>
-        <Image width='100%'  cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/8823/ortur_master3_230%C3%97120_en.jpg'></Image>
-        <Image width='100%' cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg'></Image>
-        <Image width='100%' cursor='pointer' src='https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg'></Image>                   
-        <Image  width='100%' cursor='pointer'src='https://uidesign.gbtcdn.com/GB/image/6080/230x120.jpg?imbypass=true'></Image>
+        <Image width='100%'  cursor='pointer' src='https://www.gearbest.com/u_file/2212/13/photo/alfawise-a490.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_337'></Image>
+        <Image width='100%' cursor='pointer' src='https://www.gearbest.com/u_file/2212/13/photo/oneplus-4557.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_337'></Image>
+        <Image width='100%' cursor='pointer' src='https://www.gearbest.com/u_file/2212/13/photo/doogee-1e75.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_337'></Image>                   
+        <Image  width='100%' cursor='pointer'src='https://www.gearbest.com/u_file/2212/13/photo/ulefone-ac03.jpg?x-oss-process=image/format,webp/resize,m_lfit,w_337'></Image>
     </Grid>
     </Box>
 

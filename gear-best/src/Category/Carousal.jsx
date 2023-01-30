@@ -9,12 +9,12 @@ import Slider from "react-slick";
 
 export default function Carousel() {
   const arr = [
-    'https://uidesign.gbtcdn.com/GB/image/5502/1190x420.jpg?imbypass=true',
-    'https://uidesign.gbtcdn.com/GB/image/8823/tools_1190X420_en.jpg',
-    'https://uidesign.gbtcdn.com/GB/image/8823/security_1190%C3%97420_en.jpg',
-    'https://uidesign.gbtcdn.com/GB/image/8823/en_1190x420.jpg?imbypass=true',
-    'https://uidesign.gbtcdn.com/GB/image/8823/PPC+1190X420+EN.jpg',
-    'https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg'
+    'https://www.gearbest.com/u_file/2212/12/photo/105254957714338494-195a.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_1920',
+    'https://www.gearbest.com/u_file/2301/14/photo/407571323-OK-775f.png?x-oss-process=image/format,webp/resize,m_lfit,h_0,w_1920',
+    // 'https://rukminim1.flixcart.com/fk-p-flap/844/140/image/d3cd3cc1199fb514.jpg?q=50',
+    // 'https://rukminim1.flixcart.com/fk-p-flap/50/50/image/a44b2738f8299417.jpeg?q=50',
+    // 'https://uidesign.gbtcdn.com/GB/image/8823/PPC+1190X420+EN.jpg',
+    // 'https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg'
   ]
 
   const renderSlides = () =>
