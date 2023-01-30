@@ -20,7 +20,7 @@ function Row1() {
           <div className="third-div-title-images">
             <div className="third-div-title-images1">
               <img
-                src="https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16663/goods_thumb_220-v3/d11711787acb.jpg"
+                src="https://www.gearbest.com/u_file/2212/15/products/3509769a46.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_240,w_240"
                 alt=""
               />
               <p>Global Version 2022 New i14 Pro Max 7.3 Inch Smartphones 16GB+1TB 8000mAh 4G/5G </p>
@@ -41,7 +41,7 @@ function Row1() {
           <div className="third-div-title-images">
             <div className="third-div-title-images1">
               <img
-                src="https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16584/goods_thumb_220-v3/7d7a74f9044c.jpg"
+                src="https://www.gearbest.com/u_file/2301/13/products/SKU-01-128GBBlack-b92d.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500"
                 alt=""
               />
               <p>Global Version M11 Ultra Smartphones Android 7.3 inch Mobile Phones 16GB RAM 1TB ROM</p>
@@ -61,7 +61,7 @@ function Row1() {
           <div className="third-div-title-images">
             <div className="third-div-title-images1">
               <img
-                src="https://gloimg.gbtcdn.com/soa/gb/store/6878400698325856256/16414/goods_thumb_220-v3/62f163437481.jpg"
+                src="https://www.gearbest.com/u_file/2212/14/products/702271c92e.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500"
                 alt=""
               />
               <p>Original Xiaomi Fire Smoke Alarm Support Remote Control Smoke Sense Guard Fire Smoke Alarm Detector</p>
@@ -81,7 +81,7 @@ function Row1() {
           <div className="third-div-title-images">
             <div className="third-div-title-images1">
               <img
-                src="https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16464/goods_thumb_220-v1/9338ff0d7622.jpg"
+                src="https://www.gearbest.com/u_file/2301/14/products/Main-01-827d.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500"
                 alt=""
               />
               <p>Ashiboogoole Wireless Bluetooth Speaker FM Radio Sound Box Desktop Alarm Clock Subwoofer Music Player</p>
