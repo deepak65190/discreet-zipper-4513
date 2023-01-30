@@ -14,7 +14,7 @@ if(email!=='' || pass!==''){
     localStorage.setItem('userData',JSON.stringify({"email":email,"password":pass}));
     navigate('/login')
 }else{
-    alert('something went wrong')
+    alert(' wrong credential')
 }
 
 

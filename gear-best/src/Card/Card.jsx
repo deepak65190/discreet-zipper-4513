@@ -7,7 +7,7 @@ import { Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FaRupeeSign } from "react-icons/fa";
 import { RiDeleteBinFill } from "react-icons/ri";
-
+import Empty from "./emty";
 const Card = () => {
   const [items, setItems] = useState(
     JSON.parse(localStorage.getItem("card")) || []
@@ -33,10 +33,9 @@ const toast = useToast();
         })
       
   };
-  const pay =()=>{
-    console.log("hii") ;
-      <Link to="/payment" />;
-  }
+if(!length){
+  return <Empty/>
+}
   return (
     <div className={styles.cartContainer}>
       <h1 className={styles.totalP}>
