@@ -8,10 +8,10 @@ const HomeProductCard = ({ newPrice, image, price, id, title,discount }) => {
   return (
     <div className={styles.container}>
       <div>
-        <div className={styles.discount}>
+        {/* <div className={styles.discount}>
           <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
           <span style={{ fontSize: "14px", color: "white" }}>off</span>
-        </div>
+        </div> */}
         <Link to={`/superDeal/${id}`}>
           <img src={image} alt="" className={styles.productimg}  />
         </Link>

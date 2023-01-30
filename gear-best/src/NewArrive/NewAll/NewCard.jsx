@@ -7,10 +7,10 @@ const NewCard = ({ price__1, image, price, id, title }) => {
   return (
     <div className={styles.container}>
       <div>
-        <div className={styles.discount}>
+        {/* <div className={styles.discount}>
           <span style={{ fontSize: "17px", color: "white" }}>{dis}%</span>
           <span style={{ fontSize: "14px", color: "white" }}>OFF</span>
-        </div>
+        </div> */}
         <Link to={`/superDeal/${id}`}>
           <img src={image} alt="icon" />
         </Link>
@@ -22,10 +22,10 @@ const NewCard = ({ price__1, image, price, id, title }) => {
         </Link>
         <span style={{ fontSize: "13px", color: "grey" ,cursor:"default" }}>RRP:</span>
         <span style={{ fontSize: "13px", color: "grey" }}>
-          <del style={{cursor:"default"}}>${price}</del>
+          <span style={{cursor:"default" ,color:"red" ,marginLeft:"5px"}}>${price}</span>
         </span>
         <br />
-        <span style={{ fontSize: "17px", color: "red" }}>${price__1}</span>
+        {/* <span style={{ fontSize: "17px", color: "red" }}>${price__1}</span> */}
       </div>
     </div>
   );

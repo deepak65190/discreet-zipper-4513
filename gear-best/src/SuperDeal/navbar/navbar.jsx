@@ -6,7 +6,7 @@ import Deal2 from "./Deal2";
 const Navbar1 = () => {
   return (
     <div style={{position:"sticky" ,marginTop:"20px"}}>
-      <div className={styles.category}>
+      {/* <div className={styles.category}>
         <div>
           <img
             src="https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/supDeals.png"
@@ -70,7 +70,7 @@ const Navbar1 = () => {
           />
           <span>Appliance</span>
         </div>
-      </div>
+      </div> */}
       <div className={styles.countdown}>
         <div>
           <span> Ends in:</span>

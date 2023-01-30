@@ -47,7 +47,7 @@ const Products = () => {
       <CommonHeader />
       <Navbar1 />
       <div className={styles.productsnav}>
-        <span style={{ color: "red" }}>Sort By:</span>
+        <span style={{ color: "grey" }}>Sort By:</span>
         <div>
           <span
             onClick={() => setClas("recommend")}
@@ -68,7 +68,7 @@ const Products = () => {
             Newest
           </span>
           <span
-            style={{ color: "red" }}
+            style={{ color: "grey" }}
             onClick={() => setClas("price")}
             className={clas == "price" ? styles.price : ""}
           >
@@ -76,7 +76,7 @@ const Products = () => {
             <GoTriangleUp />
           </span>
           <span
-            style={{ color: "red" }}
+            style={{ color: "grey" }}
             onClick={() => setClas("discount")}
             className={clas == "discount" ? styles.price : ""}
           >
