@@ -10,7 +10,7 @@ export const getAppProductData = async (dispatch) => {
     type: GET_APPONLYPRODUCTS_LOADING,
   });
   try {
-    const res = await axios.get('https://database-json-server.vercel.app/appOnly');
+    const res = await axios.get("https://database-json-server.vercel.app/appOnly");
     dispatch({
       type: GET_APPONLYPRODUCTS_SUCCESS,
       payload: res.data,

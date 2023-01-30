@@ -18,7 +18,7 @@ const ProductCard = ({ newPrice, image, price, id, title }) => {
 
       <div>
         <Link to={`/superDeal/${id}`}>
-          <p className={styles.titleP}>{title}</p>
+          <p className={styles.titleP}>{title }</p>
         </Link>
         <span style={{ fontSize: "17px", color: "red", cursor: "default" }}>
           ${newPrice}

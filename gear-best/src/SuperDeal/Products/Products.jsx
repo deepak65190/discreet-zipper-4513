@@ -43,7 +43,7 @@ const Products = () => {
  
   return (
     <div className={styles.container}>
-      <Navbar />
+    
       <CommonHeader />
       <Navbar1 />
       <div className={styles.productsnav}>
@@ -90,7 +90,7 @@ const Products = () => {
           <ProductCard key={item.id} {...item} />
         ))}
       </div>
-      <Footer />
+     
     </div>
   );
 };

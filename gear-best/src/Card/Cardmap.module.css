@@ -1,0 +1,19 @@
+.cardComponent {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+.cardComponent > div {
+  width: 33%;
+  height: 100%;
+  border: 1px solid red;
+}
+.imgp > img {
+  width: 60%;
+}

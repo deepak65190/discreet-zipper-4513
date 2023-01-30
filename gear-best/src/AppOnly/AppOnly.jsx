@@ -24,14 +24,14 @@ const AppOnly = () => {
   return (
     
     <div className={styles.container}>
-      <Navbar />
+      
       <CommonHeader />
       <div className={styles.productsdata} style={{marginTop:'50px'}}>
         {appproduct?.map((item) => (
           <AppOnlyP {...item} />
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 };

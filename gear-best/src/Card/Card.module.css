@@ -1,27 +1,57 @@
-.cardComponent{
-    width: 90%;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cartContainer {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #f3f4f6;
+}
+.cartContainerdiv {
+  margin-bottom: 20px;
+}
+.cartContainerdiv > li {
+  list-style-type: none;
+  margin-top: 20px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.totalP {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.allp {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.allp > div {
+  width: 30%;
+  height: auto;
+}
+.imgp > img {
+  width: 50%;
+  padding: 5px;
+}
+.deleteBtn:hover {
+  color: teal;
+}
+.pricelogo {
+  display: inline-block;
+}
+.paybtn {
+    width: 50px;
+ margin: auto;
+ padding: 20px;
+}
+.emptyDiv{
     margin: auto;
-    /* border: 1px solid red; */
-}
-.cartImg{
-    width: 100%;
-    border-radius: 10px;
-}
-.cartTitleN{
-    font-size: 14px;
-    
-}
-.inADDbtnCart{
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px;
-}
-.cardComponentMap{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    text-align: center;
 }

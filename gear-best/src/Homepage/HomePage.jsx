@@ -13,7 +13,7 @@ import HomeProducts from '../HomeProducts/HomeProducts';
 function HomePage() {
   return (
     <div>
-     <Navbar/>
+    
      <Category />
      <Collection/>
      <Row1/>
@@ -21,7 +21,7 @@ function HomePage() {
      <Row2 />
      <HomeProducts />
      <Nav />
-     <Footer />
+    
     
     </div>
   )
