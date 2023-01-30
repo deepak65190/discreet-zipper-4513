@@ -40,13 +40,13 @@ e.preventDefault();
             <form className={styles.login} onSubmit={handleSubmit}>
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="enter email"
                 onChange={(e) => setEmail(e.target.value)}
               />
               <br />
               <input
                 type="password"
-                placeholder="Create password"
+                placeholder="enter password"
                 onChange={(e) => setPass(e.target.value)}
               />
               <br />

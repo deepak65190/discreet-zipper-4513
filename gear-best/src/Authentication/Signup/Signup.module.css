@@ -28,19 +28,22 @@
 }
 .form>div>form>input:focus{
     outline: none;
-    border: 2px solid #FFDA00;
+    border: 2px solid black;
 }
 .form>div:nth-child(2)>form>input:nth-child(1){
-    padding: 6px 180px 6px 15px;
+    width: 360px;
+    height: 35px;
 }
 .form>div:nth-child(2)>form>input:nth-child(7){
     padding: 6px 59px 6px 15px;
 }
 .form>div:nth-child(2)>form>input:nth-child(3){
-    padding: 6px 180px 6px 15px;
+    width: 360px;
+    height: 35px;
 }
 .form>div:nth-child(2)>form>input:nth-child(5){
-    padding: 6px 180px 6px 15px;
+  width: 360px;
+    height: 35px;
 }
 .form>div:nth-child(2)>form>img{
     height: 36px;

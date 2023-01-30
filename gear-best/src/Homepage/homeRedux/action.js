@@ -10,7 +10,7 @@ export const getHomeProductData = async (dispatch) => {
     type: GET_HOMEPRODUCTS_LOADING,
   });
   try {
-    const res = await axios.get('https://database-json-server.vercel.app/homepage');
+    const res = await axios.get("https://database-json-server.vercel.app/homepage");
     dispatch({
       type: GET_HOMEPRODUCTS_SUCCESS,
       payload: res.data,
