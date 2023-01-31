@@ -7,6 +7,7 @@ import { Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FaRupeeSign } from "react-icons/fa";
 import { RiDeleteBinFill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 import Empty from "./emty";
 const Card = () => {
   const [items, setItems] = useState(
@@ -33,6 +34,10 @@ const toast = useToast();
         })
       
   };
+  let navigate = useNavigate()
+  const handletopay= ()=>{
+navigate("/payCred");
+  }
 if(!length){
   return <Empty/>
 }
@@ -76,7 +81,7 @@ if(!length){
       </ul>
       <div className={styles.paybtn}>
         <Link to='/payment' />
-        <Button colorScheme="teal" variant="solid">
+        <Button colorScheme="teal" variant="solid" onClick={handletopay}>
           Proceed to pay
         </Button>
         <Link />

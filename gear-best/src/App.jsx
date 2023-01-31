@@ -10,12 +10,14 @@ import MainRoutes from './AllRoutes/mainRoutes';
 import CommonHeader from './Navbar/CommonHeader';
 import Payment from './Payment/Payment';
 import NewFooter from './newFooter/newFooter';
+import Pay from './pay';
 function App() {
   return (
     <div className="App">
     <Navbar/>
       <MainRoutes />
      <NewFooter/>
+   
     </div>
   )
 
