@@ -20,7 +20,7 @@
     margin-top: 40px;
 }
 .form form>input{
-    outline: 1px solid #FFDA00;
+    outline: 1px solid black;
     border-radius: 4px;
     margin-top: 10px;
     padding: 3px 5px;

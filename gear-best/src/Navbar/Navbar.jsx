@@ -32,8 +32,10 @@ import { ChevronDownIcon,ChevronUpIcon  } from "@chakra-ui/icons";
 function Navbar() {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
-let totalItem = JSON.parse(localStorage.getItem("totalItem")) || [];
-console.log(totalItem ,"tp")
+const [totalItem, setTotalItem] =React.useState(0)
+React.useEffect(()=>{
+setTotalItem(JSON.parse(localStorage.getItem("totalItem")));
+} ,[totalItem])
   return (
     <>
       <section id="Navbar">

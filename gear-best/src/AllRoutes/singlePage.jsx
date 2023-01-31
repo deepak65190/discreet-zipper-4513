@@ -32,12 +32,9 @@ const SinglePage = () => {
   const handleLocal = () => {
     console.log("hiii");
     let data = {
-      id: "1",
-      image:
-        "https://www.gearbest.com/u_file/2301/13/products/SKU-01-128GBBlack-b92d.jpg?x-oss-process=image/format,webp/resize,m_lfit,h_500,w_500",
-
-      price: 500,
-      title: "ram",
+      image: userDetails.image,
+         price :userDetails.price ,
+          title:userDetails.title
     };
     arr.push(data);
     console.log(arr);

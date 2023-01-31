@@ -9,8 +9,8 @@ import Homepage from "../../src/Homepage/HomePage";
 import New from "../NewArrive/NewAll/New";
 import AppOnly from "../AppOnly/AppOnly";
 import Card from "../Card/Card";
+import Pay from "../pay";
 import Payment from "../Payment/Payment";
-
 function MainRoutes() {
   return (
     <Routes>
@@ -26,7 +26,9 @@ function MainRoutes() {
       <Route path='/login' element={<Login />}></Route>
       <Route path='/new' element={<New />}></Route>
       <Route path="/new/:productId" element={<SinglePage />}></Route>
-      <Route path='/payment' element={<Payment />}></Route>
+     
+      <Route path='/pay' element={<Pay />}></Route>
+      <Route path='/payCred' element={<Payment />}></Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
